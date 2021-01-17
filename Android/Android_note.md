@@ -20,7 +20,7 @@ Android端末はアプリをインストールする際にこのファイルを�
 ## Explore Android Studio
 ---
 Android Studioのソースコードが入っている場所はウインドウの左側にあるProjectタブにある。  
-![](../画像/スクリーンショット/ProjectTab.png) 
+![ProjectTab](../Picture/ScreenShot/ProjectTab.png) 
   
 
 
@@ -107,3 +107,23 @@ Activityのサブクラス。古いバージョンのAndroidとの下位互換�
 ### R class
 Rクラスには、resディレクトリのコンテンツを含むすべてのアプリのアセットが含まれる。
 
+## ActionBar
+### タイトルを中央揃えにする方法
+
+## BottomNavigationView
+
+## Navigation
+
+## [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=ja)
+[RecyclerViewのリファレンス](https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView?hl=ja)
+
+依存関係(バージョンはドキュメントを確認)
+```build.gradle
+dependencies {
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+}
+```
+  
+
+
+## [Android Jetpack](https://developer.android.com/jetpack?hl=ja)
