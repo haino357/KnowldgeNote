@@ -1,0 +1,88 @@
+# Android Folder Structure
+## 2021/09,10
+- app
+  - manifests
+    - AndroidManifest.xml
+    - AndroidManifest.xml(debug)
+  - java
+    - com
+      - adjust.sdk.plugin:[ADJUST](https://help.adjust.com/ja),[GitHub:adjust/android_sdk](https://github.com/adjust/android_sdk/)
+    - di:依存性の注入
+      - component
+        - GlideComponent.kt
+      - modules
+        - ApiModule.kt
+        - AppModule.kt
+        - ScreenModule.kt
+    - extension
+    - androidapp：実際に作成するアプリの機能など
+      - app
+        - api
+          - client
+          - response
+          - request
+          - service
+        - bindingadapter
+        - constant
+        - debug
+        - event
+        - exception
+        - http
+        - json
+        - listener
+        - livedate
+        - manager
+        - model
+          - adapter
+          - etc
+          - gson
+          - home
+          - login
+          - pref
+          - realm
+          - regist
+          - search
+          - supership
+          - tutorial
+        - preferences
+        - presenter.sku
+        - receiver
+        - repos
+          - cart
+          - favorite
+        - routes
+        - service
+        - singletondata
+        - throwable
+        - ui
+          - activity
+          - adapter
+          - fragment
+          - holder
+          - view
+        - util
+        - value
+        - viewmodel
+          - sku
+        - views.sku
+        - worker
+      - framework
+        - http
+        - image
+        - json
+        - listener
+        - model
+        - util
+  - java(generated)
+  - assets
+  - jniLibs
+  - res
+  - res(generated)
+- Gradle Scripts
+  - build.gradle(Project:android)
+  - build.gradle(Module:android.app)
+  - gradle-wrapper.properties(Gradle Version)
+  - proguard-rules.pro(ProGuard Rules for android.app)
+  - gradle.properties(Project Properties)
+  - settings.gradle(Project Settings)
+  - local.properties(SDK Location)
