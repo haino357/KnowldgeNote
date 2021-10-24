@@ -16,3 +16,7 @@
 
 ## 表・テーブル
 表・テーブルの作成ツール：https://notepm.jp/markdown-table-tool
+
+## Markdownを用いたVSCodeの拡張機能
+- [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/)
+  - Markdown記法でフローチャートなどを作成する拡張機能
