@@ -3,17 +3,14 @@
 - コマンド操作：ctrl + Shift + p
 - 
 
-## 拡張機能
+## VSCode拡張機能
 - [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/)
   - Markdown記法でフローチャートなどを作成する拡張機能
 - [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
 
-## Git操作
-
 ### ブランチの変更
 ウインドウ左下に現在のブランチの表示があり、それをクリックすることで変更可能
 ![ブランチ変更](\スクリーンショット/VScode_gitブランチ.png)
-
   
 # Windows10
 ## スクリーンショット
