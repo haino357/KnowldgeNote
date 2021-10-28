@@ -13,6 +13,7 @@
 ![](画像のURL)
 <img src="画像のURL" width="サイズを入力">
 ```
+参考としてサイズは"600"がちょうど良い感じ
 
 ## 表・テーブル
 表・テーブルの作成ツール：https://notepm.jp/markdown-table-tool
