@@ -56,3 +56,4 @@ error: Cannot delete the branch 'ブランチ名' which you are currently on
 ```
 git branch -D ブランチ名
 ```
+- 削除したいブランチを選択していると削除できない
