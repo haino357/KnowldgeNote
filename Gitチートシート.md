@@ -16,6 +16,8 @@ git config --global user.email "email@～"
 ```
 git reset --hard HEAD^
 ```
+- `--hard`：コミット取り消した上でワークディレクトリの内容も書き換えたい場合に使用。
+- `--soft`：ワークディレクトリの内容はそのままでコミットだけを取り消したい場合に使用。
 ### リモートリポジトリにプッシュ済みの場合は上記でローカルを削除したのち下記を実行する。
 ```
 // 強制的にPushする
@@ -35,3 +37,22 @@ git mv 変更前ファイル名 変更後ファイル名
    1. <img src="Picture/ScreenShot/GitHub%20repositoryの種類変更②.png" width="600">
 3. 変更したい種類に変更し、リポジトリの名前を記入し決定する
    1. <img src="Picture/ScreenShot/GitHub%20repositoryの種類変更③.png" width="600">
+
+## branch削除
+```
+git branch -d ブランチ名
+git branch --delete ブランチ名
+```
+- このコマンドではマージ済のブランチを削除できる
+  - マージされていなかったり作業中のブランチを削除しようとするとエラーが発生する
+  - 下記がエラーメッセージ
+```
+# 作業中
+error: Cannot delete branch '削除するブランチ名' checked out at '作業フォルダパス'
+# マージされていない
+error: Cannot delete the branch 'ブランチ名' which you are currently on
+```
+- 作業中のブランチを削除する場合は下記コマンドを使用することでどんなローカルブランチも削除できる
+```
+git branch -D ブランチ名
+```
