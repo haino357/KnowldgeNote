@@ -15,3 +15,16 @@
 
 ## [MacでAppを強制的に終了する方法](https://support.apple.com/ja-jp/HT201276)
 `option + command + esc`
+
+- Home：`fn + ←`
+- End：`fn + →`
+- PageUp：`fn + ↑`
+- PageDown：`fn + ↓`
+- ブラウザ更新：`command + R`
+- Finderの検索を表示する：`option + command + space`
+- デスクトップを表示する：`fn + F11`
+- 強制終了のためのウインドウを開く：`option + command + esc`
+- 日本語と英語の入力変換
+  - `fn`
+  - `control + Space`
+- 
