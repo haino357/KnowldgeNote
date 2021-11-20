@@ -9,3 +9,6 @@
   - `Shift + Command + control + 4`：指定した範囲を撮影する。
   - `Shift + Command + control + 4` → Space：指定したウインドウを撮影する。
 
+## Finderで隠しファイル、隠しフォルダの表示／非表示
+`command + shift + .（コマンド + シフト ＋ ピリオド）`
+- 隠しファイルやフォルダの表示と非表示の設定が切り替える。
