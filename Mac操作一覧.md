@@ -12,3 +12,6 @@
 ## Finderで隠しファイル、隠しフォルダの表示／非表示
 `command + shift + .（コマンド + シフト ＋ ピリオド）`
 - 隠しファイルやフォルダの表示と非表示の設定が切り替える。
+
+## [MacでAppを強制的に終了する方法](https://support.apple.com/ja-jp/HT201276)
+`option + command + esc`
