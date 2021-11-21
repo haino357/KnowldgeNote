@@ -11,3 +11,7 @@
   - [AppFlowy](https://github.com/AppFlowy-IO/appflowy)
     - Open Source notion
 - 
+## 個人GitHub
+- [Yusuke Konishi(@konifar)](https://github.com/konifar)
+- [uhooi](https://github.com/uhooi)
+- 
