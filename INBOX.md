@@ -30,3 +30,16 @@
 - 英米法の場合
   - 対価(consideration)または証書(deed)の両方あるいはどちらかが必要
   - 契約はサインした時点で成立する。両者の合意時点では契約は未成立。
+
+## TypeScript
+- 参考URL
+  - [サバイバルTypeScript入門](https://book.yyts.org/)
+  - 
+
+## Webサービス
+- [CommentScreen](https://commentscreen.com/)
+  - 画面共有時にニコニコ動画みたいにコメントを流すサービス
+
+## 参考URL
+- https://blog.yt8492.com/entries/aboutthisblog
+- 
