@@ -1,7 +1,4 @@
 # GitHub参考
-- [Kotlin Android Open Source](https://github.com/Kotlin-Android-Open-Source)
-- [Android](https://github.com/android)
-- [DroidKaigi](https://github.com/DroidKaigi)
 - [AppFlowy-IO](https://github.com/AppFlowy-IO)
   - [AppFlowy](https://github.com/AppFlowy-IO/appflowy)
     - Open Source notion
@@ -18,6 +15,11 @@
   - 旧版：[mixi, Inc.](https://github.com/mixi-inc)
 - [Google](https://github.com/google)
 - 
+
+## Android
+- [Kotlin Android Open Source](https://github.com/Kotlin-Android-Open-Source)
+- [Android](https://github.com/android)
+- [DroidKaigi](https://github.com/DroidKaigi)
 
 ## 個人GitHub
 - Yusuke Konishi：[@konifar](https://github.com/konifar)
