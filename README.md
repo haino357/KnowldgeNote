@@ -14,3 +14,8 @@
 - [Kotlin_note.md](Kotlin_note.md)
 - [Mac操作一覧.md](Mac操作一覧.md)
 - [Markdown記法チートシート.md](Markdown記法チートシート.md)
+- [SwiftNote.md](SwiftNote.md)
+- [Object Oriented.md](Object%20Oriented.md)
+- [vimチートコード.md](vimチートコード.md)
+- [VSCode Notes.md](VSCode%20Notes.md)
+- [会社とは.md](会社とは.md)
