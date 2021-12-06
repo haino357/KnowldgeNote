@@ -14,7 +14,12 @@
 - [mixi GROUP](https://github.com/mixigroup)
   - 旧版：[mixi, Inc.](https://github.com/mixi-inc)
 - [Google](https://github.com/google)
-- 
+- Cyberagent
+  - [cyberagent-zemi](https://github.com/cyberagent-zemi)
+    - [katalog](https://github.com/cyberagent-zemi/katalog)
+      - [Katalog](https://cyberagent-zemi.github.io/katalog/)   
+      - [Android向けUI Catalog Library – Katalogを公開しました](https://developers.cyberagent.co.jp/blog/archives/33059/)
+
 
 ## Android
 - [Kotlin Android Open Source](https://github.com/Kotlin-Android-Open-Source)
@@ -25,3 +30,4 @@
 - Yusuke Konishi：[@konifar](https://github.com/konifar)
 - [uhooi](https://github.com/uhooi)
 - [mhidaka](https://github.com/mhidaka)
+- [Mori Atsushi](https://github.com/Mori-Atsushi)
