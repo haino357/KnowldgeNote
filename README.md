@@ -20,3 +20,11 @@
 - [VSCode Notes.md](VSCode%20Notes.md)
 - [会社とは.md](会社とは.md)
 - [FirebaseNote.md](FirebaseNote.md)
+
+## CommentList
+- CREATE : 新規ファイル作成時
+- ADD : ファイルに追記
+  - Itme.xxx : アイテム:xxxを追加
+- FIX : 修正
+- Feature
+- 
