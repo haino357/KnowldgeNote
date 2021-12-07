@@ -2,6 +2,8 @@
 - [AppFlowy-IO](https://github.com/AppFlowy-IO)
   - [AppFlowy](https://github.com/AppFlowy-IO/appflowy)
     - Open Source notion
+- [これからWeb開発を始める人に知ってほしいGitHubプロジェクト](https://qiita.com/ozora/items/1c0ac965ca9f51101a93)
+- [初学者に教えたい、MicrosoftがGitHubで公開している教材が最高だった！](https://qiita.com/ozora/items/9c801d3b0137eccc32fa)
 
 ## 企業
 - 株式会社ゆめみ：[YUMEMI Inc.](https://github.com/yumemi-inc)
