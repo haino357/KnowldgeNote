@@ -11,6 +11,6 @@
 # 読書について
 - 『読書というのはその本の内容だけでなく、その本につながる様々な知識を一緒に拾い上げていくような行為』(PSYCHO-PASS 槙島聖護)
 
-# BooksTitle
-## ［自己肯定感を上げるOUTPUT読書術］(https://www.amazon.co.jp/dp/B08TW8X1R7/ref=cm_sw_r_tw_dp_3BNX2QATYAY7QQG6V820)
+# BookTitle
+## [自己肯定感を上げるOUTPUT読書術](https://www.amazon.co.jp/dp/B08TW8X1R7/ref=cm_sw_r_tw_dp_3BNX2QATYAY7QQG6V820)
 - 最初に読書の目的を定める。そこから読書のスケジュールを決める。読書する時間を固定する。さらに本を置く場所を固定する。必ず触れ、読む場所におく。
