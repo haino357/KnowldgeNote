@@ -4,9 +4,41 @@
 - 
 
 ## VSCode拡張機能
-- [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/)
-  - Markdown記法でフローチャートなどを作成する拡張機能
 - [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
+
+## 使用中VSCode拡張機能
+- [Japanese Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)
+  - 日本語に変換する拡張機能
+- [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+  - 対応する括弧をわかりやすくする拡張機能
+- Angular Language Service
+- Java
+  - Debugger for Java
+  - Extension Pack for Java
+  - Project Manager for Java
+  - Test Runner for Java
+- Git関連
+  - [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+  - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+  - Git History
+  - GitLens — Git supercharged
+  - Language Support for Java(TM) by Red Hat
+- Kotlin
+  - Kotlin Language
+- Markdown
+  - Markdown All in One
+  - Markdown Checkbox
+  - [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/)
+    - Markdown記法でフローチャートなどを作成する拡張機能
+- Maven
+  - Maven for Java
+- Paste Image
+- Prettier - Code formatter
+- REST Client
+- Test Runner for Java
+- TSLint
+- Visual Studio IntelliCode
+- [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
 ### ブランチの変更
 - ウインドウ左下に現在のブランチの表示があり、それをクリックすることで変更可能
