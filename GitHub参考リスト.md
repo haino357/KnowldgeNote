@@ -36,3 +36,11 @@
 - [uhooi](https://github.com/uhooi)
 - [mhidaka](https://github.com/mhidaka)
 - [Mori Atsushi](https://github.com/Mori-Atsushi)
+
+## GitHub　Actions
+GitHub上にて行われるイベント(Push,Issue,Releaseなど)をトリガーとしてワークフローを起動し様々な動作を自動化することができる機能。  
+例えば、一定期間以上放置されているIssueを自動でCloseしたりすることができる。
+### 参考
+- [アイデアからリリースまでのワークフローを自動化](https://github.co.jp/features/actions)
+- [GitHubの新機能「GitHub Actions」で試すCI/CD](https://knowledge.sakura.ad.jp/23478/)
+- 
