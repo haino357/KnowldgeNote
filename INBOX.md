@@ -46,6 +46,11 @@
 ## デザインパターン(design pattern)
 ### アンチパターン(anti-pattern)
 
+## GraphQL
+- GraphQLはFacebookが開発しているクエリ言語
+  - クエリ言語とはAPIへの問い合わせ言語
+- RESTの代わりになる
+
 ## 参考URL
 - https://blog.yt8492.com/entries/aboutthisblog
 - 
