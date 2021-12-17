@@ -43,6 +43,9 @@
 - [CommentScreen](https://commentscreen.com/)
   - 画面共有時にニコニコ動画みたいにコメントを流すサービス
 
+## デザインパターン(design pattern)
+### アンチパターン(anti-pattern)
+
 ## 参考URL
 - https://blog.yt8492.com/entries/aboutthisblog
 - 
