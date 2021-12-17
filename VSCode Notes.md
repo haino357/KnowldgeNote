@@ -30,6 +30,8 @@
   - Markdown Checkbox
   - [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/)
     - Markdown記法でフローチャートなどを作成する拡張機能
+  - [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
+    - UMLの作図をMarkdown形式で作ることができるようになる機能
 - Maven
   - Maven for Java
 - Paste Image
