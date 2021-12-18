@@ -24,7 +24,10 @@
 - [Google](https://github.com/google)
 - Amazon
   - [Amazon Web Services - Labs](https://github.com/awslabs)
-
+- [Square](https://square.github.io/)
+  - [moshi](https://github.com/square/moshi)
+  - [okhttp](https://github.com/square/okhttp)
+  - [retrofit](https://github.com/square/retrofit)
 
 ## Android
 - [Kotlin Android Open Source](https://github.com/Kotlin-Android-Open-Source)
