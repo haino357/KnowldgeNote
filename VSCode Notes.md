@@ -5,6 +5,11 @@
 
 ## VSCode拡張機能
 - [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
+- [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
+  - 公式サイト:https://marp.app/
+  - スライドをMrakdownで作成できる？
+- [テキスト校正くん](https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading)
+  - [文章作成・メール作成に役立つ！VS Codeの拡張機能「テキスト校正くん」を公開](https://ics.media/entry/18859/)
 
 ## 使用中VSCode拡張機能
 - [Japanese Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja)
