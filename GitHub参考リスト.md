@@ -33,6 +33,7 @@
 - [Kotlin Android Open Source](https://github.com/Kotlin-Android-Open-Source)
 - [Android](https://github.com/android)
   - [architecture-samples](https://github.com/android/architecture-samples)
+  - [animation-samples](https://github.com/android/animation-samples)
 - [DroidKaigi](https://github.com/DroidKaigi)
 
 ## 個人GitHub
