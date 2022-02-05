@@ -13,6 +13,11 @@
 `command + shift + .（コマンド + シフト ＋ ピリオド）`
 - 隠しファイルやフォルダの表示と非表示の設定が切り替える。
 
+## Finderでファイルパスを表示
+- `option + command + p`
+
+## Finderでファイルパスをコピーする
+- `option + command + c`
 ## [MacでAppを強制的に終了する方法](https://support.apple.com/ja-jp/HT201276)
 `option + command + esc`
 
@@ -27,4 +32,6 @@
 - 日本語と英語の入力変換
   - `fn`
   - `control + Space`
-- 
+
+## Macの画面をロックする
+- `command + control + q`
