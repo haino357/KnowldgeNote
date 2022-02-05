@@ -127,3 +127,19 @@ dependencies {
 
 
 ## [Android Jetpack](https://developer.android.com/jetpack?hl=ja)
+
+## ターミナルにadbのパスを通す(Mac)
+### Android SDK locationを調べる
+- Android Studioを起動しSDK Locationを調べる
+- 大体、`/Users/ユーザ名/Library/Android/sdk`が初期設定から変更しない場合ある。
+  - 現在使用中のMacbookAirの場合は`/Users/takayukishoji/Library/Android/sdk`にある。
+
+### adbコマンドのファイルパスを通す
+adbコマンドはsdkフォルダのplatform-toolsにあるので、ファイルパスを通すために下記コマンドを実行する。
+```
+export PATH=$PATH:/Users/ユーザ名/Library/Android/sdk/platform-tools
+```
+次に、USBデバッグを有効にした上でUSBケーブルでスマホをつなぎ、下記コマンドを実行するとデバイスがつながっているかを確認できる。
+```
+$adb devices
+```
