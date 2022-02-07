@@ -1,3 +1,12 @@
+# INBOX
+* [ ] split 文字列を分割:https://itsakura.com/kotlin-split
+* [ ] spinner
+  * [ ] 中身のアイテムの作り方をまとめる
+* [ ] ViewPager2
+* [ ] [選択ツール](https://developer.android.com/guide/topics/ui/controls/pickers?hl=ja)
+* [ ] webviewの使い方
+* [ ] base64
+
 # companion object
 ## companion object参考URL
 - [Kotlinのcompanion objectとは](https://qiita.com/tkhs0604/items/261e94a42b7097dfd204)
@@ -73,6 +82,12 @@ fun getStateValue(): String {
 プログラミングの重要な概念に「表明(assertion)」という考え方がある。表明とは、プログラムの実行時に変数が満たすべき条件をコードとして表現すること。例として、「変数`i`が負でない」などのように常に満たすべき条件をプログラムの一部として書く。この条件が満たせない場合はエラーとして実行が中止されため、以降の処理を安心して書くことができる。  
 デバッグの用途のために使用すると、バグの原因の切り分けが容易になる。また、ソースコード中に暗黙の前提を残さないために、処理の節目には表明を入れるとよい。
 
+
+## ダブルクォーテーションをエスケープする方法
+```
+val json = "\"Hello, world!!!\""
+println(json)
+```
 
 # 参考サイト
 - [Kotlin の require, check, assert 関数の使い分け](https://t-keita.hatenadiary.jp/entry/2020/12/05/223942)
