@@ -10,4 +10,29 @@
   - 現状理由も対応策もなし
 
 ## キャッシュ削除の方法
-File ＞Invalidate Caches/Restart ： キャッシュを削除して再起動
+`File ＞Invalidate Caches/Restart` ： キャッシュを削除して再起動
+
+## APKの作り方
+`Build > Generate Signed Bundle or APK`と実行すると下記ウインドウが開く。
+<img src="/Picture/ScreenShot/Generate%20Signed%20Bundle%20or%20APK.png" width="600">
+APKを選択し、Nextを押下すると下記画面に遷移する。
+<img src="/Picture/ScreenShot/Generate%20Signed%20Bundle%20or%20APK2.png" width="600">
+`Key store path`がない場合は上記画像の赤枠部分`Create new...`を謳歌すると下記画像が出てくる。
+<img src="/Picture/ScreenShot/New%20Key%20Store.png" width="600">
+<img src="/Picture/ScreenShot/keystorepath.jpeg" width="600">
+上記をクリックして、Key.jksの保存先を決定する。
+<img src="/Picture/ScreenShot/keystorepath02.jpeg" width="600">
+
+`Key.jks`を保存後、以下に記載する項目を設定する。
+- Password & Confirm：キーストアのパスワード。署名設定時に必要。6文字以上必要。
+- Alias：キーを識別する任意の名前。画像はデフォルト
+- KeyのなかのPassword & Confirm：キーのパスワード。署名設定時に必要
+- Certificate：証明書の所有者に関する情報。どれか一つは入力が必要。6文字以上必要
+
+<img src="/Picture/ScreenShot/Generate APK.png" width="600">
+
+上記画像の赤枠部分を入力後 `Next` ボタンを押下し、下記の画面へ遷移する。
+
+<img src="/Picture/ScreenShot/Generate APK02.png" width="600">
+
+上記画像から、APKの状態を選択し、`Finish`ボタンを押下し、完了。
