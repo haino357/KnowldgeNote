@@ -89,6 +89,41 @@ val json = "\"Hello, world!!!\""
 println(json)
 ```
 
+## オンラインのPDFファイルをURLからダウンロードせずに表示する
+### 外部アプリを起動してPDFを表示する
+```
+private fun openPdfFromUrl(url: String) {
+    Intent(Intent.ACTION_VIEW).apply {
+        setDataAndType(Uri.parse(url), "application/pdf")
+    }.also { intent ->
+        openPdfFromIntent(intent)
+    }
+}
+
+private fun openPdfFromIntent(intent: Intent) {
+    intent.resolveActivity(packageManager)?.run {
+        startActivity(intent)
+    } ?: Toast.makeText(
+        context,
+        "No Application found to open the PDF",
+        Toast.LENGTH_LONG
+    ).show()
+}
+```
+### WEBブラウザでPDFを表示する
+この方法は、WEBブラウザを経由して、最終的にGoogleドライブでGoogle ドキュメントととして表示する。
+```
+private fun openPdfByGoogleDrive(url: String) {
+    Intent(Intent.ACTION_VIEW).apply {
+        data = Uri.parse("http://docs.google.com/viewer?url=$url")
+    }.also { intent ->
+        openPdfFromIntent(intent)
+    }
+}
+```
+### 参考サイト
+- [オンラインの PDF ファイルを URL から表示する（ダウンロードせずに）｜Android Kotlin 実践勉強会](https://note.com/suinaan/n/n9aba130caf08)
+
 # 参考サイト
 - [Kotlin の require, check, assert 関数の使い分け](https://t-keita.hatenadiary.jp/entry/2020/12/05/223942)
   - 関数の項目の下記項目の参考
