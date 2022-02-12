@@ -111,3 +111,7 @@ KPT法とは、取り組んでいる仕事や活動を改善するための改�
 ## 参考URL
 - https://blog.yt8492.com/entries/aboutthisblog
 - 
+
+# WIP
+WIPとは「work in progress」の省略表現
+「製作途中の物だよ」とか「やりかけのやつだよ」とかの意味
