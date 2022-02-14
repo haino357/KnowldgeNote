@@ -152,3 +152,47 @@ $adb devices
    android:windowSoftInputMode="adjustPan"> 
 </activity>
 ```
+
+## プルダウンの実装
+### xmlファイルでSpinnerを実装
+```
+<Spinner
+    android:id="@+id/spinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="100dp"
+    android:layout_marginTop="10dp" />
+```
+### クラスファイルを実装
+シンプルにアダプターを利用し、Spinnerでプルダウンを実装すると下記のように記載する。
+```
+val adapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_item)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        adapter.add("A型")
+        adapter.add("B型")
+        adapter.add("AB型")
+        adapter.add("O型")
+        val spinner = findViewById(R.id.spinner) as Spinner
+        spinner.adapter = adapter
+```
+アダプターを作る際に`this`を利用しているが、これは`Activity`の場合使える。`Fragment`の場合は`requireContext()`を使用する。
+```
+val adapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_item)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        adapter.add("A型")
+        adapter.add("B型")
+        adapter.add("AB型")
+        adapter.add("O型")
+        val spinner = findViewById(R.id.spinner) as Spinner
+        spinner.adapter = adapter
+```
+Androidのリソースを利用し、プルダウンの選択肢を追加する場合は下記の場所に`arrays.xml`ファイルを作成し、利用する。
+```
+res > values > arrays.xml
+```
+```
+val serviceUseCountAdapter = ArrayAdapter.createFromResource(this,
+            R.array.spinner_array_items, android.R.layout.simple_spinner_dropdown_item)
+        val spinner = findViewById(R.id.spinner) as Spinner
+        spinner.adapter = adapter
+```
