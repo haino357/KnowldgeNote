@@ -143,3 +143,12 @@ export PATH=$PATH:/Users/ユーザ名/Library/Android/sdk/platform-tools
 ```
 $adb devices
 ```
+
+## ソフトキーボードがビューを押し上げないようにする
+`AndroidMainfest.xml`に下記を追加する。
+```
+<activity
+   ...
+   android:windowSoftInputMode="adjustPan"> 
+</activity>
+```
