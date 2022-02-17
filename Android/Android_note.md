@@ -143,6 +143,11 @@ export PATH=$PATH:/Users/ユーザ名/Library/Android/sdk/platform-tools
 ```
 $adb devices
 ```
+### adbコマンドでapkをインストールする
+```
+adb install xxx.apk
+```
+xxx.apkはapkファイルまでのパスを入れる
 
 ## ソフトキーボードがビューを押し上げないようにする
 `AndroidMainfest.xml`に下記を追加する。
