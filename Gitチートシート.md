@@ -79,3 +79,11 @@ error: Cannot delete the branch 'ブランチ名' which you are currently on
 git branch -D ブランチ名
 ```
 - 削除したいブランチを選択していると削除できない
+
+## パスワード求められたが、パスワードでは対応できない場合
+### Mac
+1. ターミナルでパスワードを求められる操作を行うと下記のようにパスワードを求められる。ここでコロン以下にGitHubのTokenを入力する。
+```
+Password for 'https://mht-takayuki-shoji@github.com': Tokenを入力
+```
+
