@@ -201,3 +201,40 @@ val serviceUseCountAdapter = ArrayAdapter.createFromResource(this,
         val spinner = findViewById(R.id.spinner) as Spinner
         spinner.adapter = adapter
 ```
+
+## 画面遷移
+### Activity
+
+### Fragment
+#### Fragment間で値を受け渡す
+Fragmentaa間で値を受け渡すための方法には下記がある。
+- Bundleを使う
+  - 【応用】SafeArgsを使用する
+- ActivityのスコープでViewModelを使用する
+- navGraphViewModelsを使用する
+- setFragmentResultを使用する
+
+上記の方法の具体的方法を下記に記載していく。
+
+##### Bundleを使用する
+一番オーソドックスな方法。遷移先のFragmentを生成する際に値をargumentsとして渡す。
+
+受け渡し側の
+```Kotlin
+val title = "タイトル"
+// Bundleインスタンスを作成
+val bundle = Bundle()
+// putXXXXで値をセットする
+bundle.putString("BUNDLE_KEY_TITLE", title)
+// Fragmentに値をセットする
+val fragment = SecondFragment()
+fragment.arguments = bundle
+// 遷移処理
+parentFragmentManager.beginTransaction()
+        .add(R.id.container, fragment)
+        .commit()
+```
+
+##### ActivityのスコープでViewModelを使用する
+##### navGraphViewModelsを使用する
+##### setFragmentResultを使用する
