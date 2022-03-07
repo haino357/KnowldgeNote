@@ -80,6 +80,15 @@ git branch -D ブランチ名
 ```
 - 削除したいブランチを選択していると削除できない
 
+
+## Merge
+branchAにbrunchBをmergeする場合のコマンド
+branchAを選択した状態で下記コマンドを実行する
+```
+git merge branchB
+```
+<img src="Picture/git-merge.png" width="600">
+
 ## パスワード求められたが、パスワードでは対応できない場合
 ### Mac
 1. ターミナルでパスワードを求められる操作を行うと下記のようにパスワードを求められる。ここでコロン以下にGitHubのTokenを入力する。
