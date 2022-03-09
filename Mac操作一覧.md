@@ -42,6 +42,16 @@
 ## Macの画面をロックする
 - `command + control + q`
 
+# ターミナル
+## コマンド一覧
+**CPU(プロセッサ)を調べる**
+```
+$ sysctl -a machdep.cpu.brand_string
+
+// 実行結果
+machdep.cpu.brand_string: Apple M1
+```
+
 # brew(Homebrew)
 brew(Homebrew)とは、macOS用パッケージマネージャー
 
