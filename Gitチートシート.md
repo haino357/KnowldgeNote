@@ -96,3 +96,40 @@ git merge branchB
 Password for 'https://mht-takayuki-shoji@github.com': Tokenを入力
 ```
 
+## Git LFS (Large File Storage)
+Gitは大きなファイルやバイナリファイルを扱うのが苦手なので、欠点を補うためにGitHubが開発したのがGit LFS(Large File Storage)という拡張機能。
+
+### インストールとセットアップ
+今回の対応ではMacを使用する前提で記載する。
+**インストール**
+まずはGit LFSクライアントをインストールする。Git LFSはあくまで Gitの拡張機能という位置づけになっている。そのため、利用するにはまず拡張機能を含むソフトウェアを入れる必要がある。
+
+macOS であれば Homebrew を使って`git-lfs`をインストールする。
+```
+$ brew install git-lfs
+```
+Git LFSのバージョン確認
+```
+$ git lfs version
+
+// 実行結果
+git-lfs/3.1.2 (GitHub; darwin amd64; go 1.17.6)
+```
+下記コマンドを実行して Git LFS クライアントの初期設定をする。
+```
+$ git lfs install
+
+// 実行結果
+Git LFS initialized.
+```
+下記コマンドを実行すると Git クライアントの設定ファイルである `~/.gitconfig`にGit LFS用の設定が入る。
+```
+$ grep -A 4 lfs ~/.gitconfig
+
+// 実行結果
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+```
