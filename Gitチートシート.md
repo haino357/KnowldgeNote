@@ -96,6 +96,15 @@ git merge branchB
 Password for 'https://mht-takayuki-shoji@github.com': Tokenを入力
 ```
 
+## ブランチ名の変更
+```
+git branch -m <古いブランチ名> <新しいブランチ名>
+```
+選択しているブランチの名前を変更する場合
+```
+git branch -m 新しいブランチ名
+```
+
 ## Git LFS (Large File Storage)
 Gitは大きなファイルやバイナリファイルを扱うのが苦手なので、欠点を補うためにGitHubが開発したのがGit LFS(Large File Storage)という拡張機能。
 
