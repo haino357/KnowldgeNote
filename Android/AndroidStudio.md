@@ -1,7 +1,13 @@
 # AndroidStudio
 
 ## ショートカットキー
+### Maca版
+- コードの整形：command + option + L
+- 検索機能：shift2回押し
 
+### Windows
+- コードの整形：Ctrl + Alt + L
+- 検索機能：shift2回押し
 
 ## エミュレーター
 ### エラー対応
