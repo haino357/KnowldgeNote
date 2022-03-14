@@ -4,10 +4,12 @@
 ### Maca版
 - コードの整形：command + option + L
 - 検索機能：shift2回押し
+- 真下にコピー：command + D
 
 ### Windows
 - コードの整形：Ctrl + Alt + L
 - 検索機能：shift2回押し
+- 真下にコピー：Ctrl + D
 
 ## エミュレーター
 ### エラー対応
