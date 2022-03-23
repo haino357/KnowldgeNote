@@ -52,6 +52,36 @@ $ sysctl -a machdep.cpu.brand_string
 machdep.cpu.brand_string: Apple M1
 ```
 
+## シェルの種類確認
+```
+echo $SHELL
+
+// 実行結果
+/bin/zsh
+```
+<img src="Picture/ScreenShot/ターミナルのシェル確認.png" width="600">
+現在は`zsh`を利用している。
+
+## シェルの編集
+下記コマンドを実行して、設定ファイルを開く。
+```
+$ open ~/.zshrc
+$ vim ~/.zshrc
+  または
+$ open ~/.bash_profile
+$ vim ~/.bash_profile
+```
+- テキストエディタを選択する場合: open
+- vimを選択する場合：vim
+  - vimを利用する場合は[vimチートコード](../vimチートコード.md)を参照する。
+
+bashの編集後は下記コマンドを実行し、編集内容を反映させる。
+```
+$ source .zshrc
+$ source .bash_profile
+$ source .bashrc
+```
+
 # brew(Homebrew)
 brew(Homebrew)とは、macOS用パッケージマネージャー
 

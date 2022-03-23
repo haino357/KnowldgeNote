@@ -129,16 +129,44 @@ dependencies {
 ## [Android Jetpack](https://developer.android.com/jetpack?hl=ja)
 
 ## ターミナルにadbのパスを通す(Mac)
+ADBとは、「Android Debug Bridge」の略で、Android端末とやりとりするための多用途なコマンドである。アプリのインストールやアンインストール、クラッシュログの出力など、さまざまな操作が行える。
 ### Android SDK locationを調べる
 - Android Studioを起動しSDK Locationを調べる
 - 大体、`/Users/ユーザ名/Library/Android/sdk`が初期設定から変更しない場合ある。
   - 現在使用中のMacbookAirの場合は`/Users/takayukishoji/Library/Android/sdk`にある。
 
 ### adbコマンドのファイルパスを通す
-adbコマンドはsdkフォルダのplatform-toolsにあるので、ファイルパスを通すために下記コマンドを実行する。
+adbコマンドはsdkフォルダのplatform-toolsにあるので、ファイルパスを通すために下記を追記する。
 ```
 export PATH=$PATH:/Users/ユーザ名/Library/Android/sdk/platform-tools
 ```
+上記を追加する場所は下記コマンドを実行して、設定ファイルを開く。
+```
+$ open ~/.zshrc
+$ vim ~/.zshrc
+  または
+$ open ~/.bash_profile
+$ vim ~/.bash_profile
+```
+- テキストエディタを選択する場合: open
+- vimを選択する場合：vim
+  - vimを利用する場合は[vimチートコード](../vimチートコード.md)を参照する。
+
+上記コマンドどちらを選択するかは、下記コマンドを実行しシェルの種類を確認する。
+```
+echo $SHELL
+
+// 実行結果
+/bin/zsh
+```
+
+bashの編集後は下記コマンドを実行し、編集内容を反映させる。
+```
+$ source .zshrc
+$ source .bash_profile
+$ source .bashrc
+```
+
 次に、USBデバッグを有効にした上でUSBケーブルでスマホをつなぎ、下記コマンドを実行するとデバイスがつながっているかを確認できる。
 ```
 $adb devices
