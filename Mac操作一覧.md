@@ -1,3 +1,11 @@
+# マシン環境
+- マシン
+  - M1 MacbookAir 2020
+- OS
+  - Mac OS Big Sur Ver.11.3.1
+- シェル
+  - zsh 5.8 (x86_64-apple-darwin20.0)
+
 # ショートカットキー
 ## スクリーンショット
 - 画像ファイルが生成する
@@ -61,6 +69,18 @@ echo $SHELL
 ```
 <img src="Picture/ScreenShot/ターミナルのシェル確認.png" width="600">
 現在は`zsh`を利用している。
+
+## シェルのバージョン確認
+```
+zsh --version
+または
+echo $ZSH_VERSION
+
+// 実行結果
+zsh 5.8 (x86_64-apple-darwin20.0)
+または
+5.8
+```
 
 ## シェルの編集
 下記コマンドを実行して、設定ファイルを開く。
