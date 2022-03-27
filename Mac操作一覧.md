@@ -6,6 +6,8 @@
 - シェル
   - zsh 5.8 (x86_64-apple-darwin20.0)
 
+<img src="Picture/ScreenShot/MacBookAirImfo.png" width="600">
+
 # ショートカットキー
 ## スクリーンショット
 - 画像ファイルが生成する
@@ -50,6 +52,9 @@
 ## Macの画面をロックする
 - `command + control + q`
 
+## Spotlightウインドウを開く/閉じる
+- `command + space`
+
 # ターミナル
 ## コマンド一覧
 **CPU(プロセッサ)を調べる**
@@ -68,6 +73,7 @@ echo $SHELL
 /bin/zsh
 ```
 <img src="Picture/ScreenShot/ターミナルのシェル確認.png" width="600">
+
 現在は`zsh`を利用している。
 
 ## シェルのバージョン確認
