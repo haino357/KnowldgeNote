@@ -305,3 +305,9 @@ android:ellipsize="end"
 // 文字を見切れたまま表示する
 android:ellipsize=”none”
 ```
+
+### TextViewのtextの行数を指定する
+```
+// 1行のみ表示する
+android:maxLines="1"
+```
