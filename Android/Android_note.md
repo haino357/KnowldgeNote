@@ -290,3 +290,18 @@ button.visibility = View.INVISIBLE
 // 非表示（非表示にしたスペースは詰める）
 button.visibility = View.GONE
 ```
+
+### TextViewのtext省略
+```
+// 文字列が枠に収まりきらない場合、文頭を省略
+android:ellipsize="start"
+
+// 文字列が枠に収まりきらない場合、中略
+android:ellipsize="middle"
+
+// 文字列が枠に収まりきらない場合、末尾を省略
+android:ellipsize="end"
+
+// 文字を見切れたまま表示する
+android:ellipsize=”none”
+```
