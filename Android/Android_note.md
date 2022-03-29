@@ -231,6 +231,46 @@ val serviceUseCountAdapter = ArrayAdapter.createFromResource(this,
 ```
 
 ## AndroidLayout
+### 表示位置
+#### ウィジェットの表示位置
+**xmlファイルに記載**
+`ConstraintLayout`の場合、制約の条件が優先される。
+```
+// 縦・横どちらも中央に表示する
+android:layout_gravity="center"
+// 縦のみ中央に表示する
+android:layout_gravity="center_vertical"
+// 横のみ中央に表示する
+android:layout_gravity="center_horizontal"
+
+// 左側に表示
+android:layout_gravity="start"
+// 右側に表示
+android:layout_gravity="end"
+// 上側に表示
+android:layout_gravity="top"
+// 下側に表示
+android:layout_gravity="bottom"
+```
+#### ウィジェット内部の部品の表示位置
+```
+// 縦・横どちらも中央に表示する
+android:gravity="center"
+// 縦のみ中央に表示する
+android:gravity="center_vertical"
+// 横のみ中央に表示する
+android:gravity="center_horizontal"
+
+// 左側に表示
+android:gravity="start"
+// 右側に表示
+android:gravity="end"
+// 上側に表示
+android:gravity="top"
+// 下側に表示
+android:gravity="bottom"
+```
+
 ### 表示・非表示
 **xmlファイルに記載する場合**
 ```
