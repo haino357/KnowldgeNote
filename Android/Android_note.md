@@ -229,3 +229,24 @@ val serviceUseCountAdapter = ArrayAdapter.createFromResource(this,
         val spinner = findViewById(R.id.spinner) as Spinner
         spinner.adapter = adapter
 ```
+
+## AndroidLayout
+### 表示・非表示
+**xmlファイルに記載する場合**
+```
+// 表示
+android:visibility="visible" 
+// 非表示（非表示にしたスペースは詰めない）
+android:visibility="invisible"
+// 非表示（非表示にしたスペースは詰める）
+android:visibility="gone" 
+```
+**ktファイルに記載する場合**
+```
+// 表示
+button.visibility = View.VISIBLE
+// 非表示（非表示にしたスペースは詰めない）
+button.visibility = View.INVISIBLE
+// 非表示（非表示にしたスペースは詰める）
+button.visibility = View.GONE
+```
