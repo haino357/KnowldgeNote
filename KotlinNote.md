@@ -124,6 +124,34 @@ private fun openPdfByGoogleDrive(url: String) {
 ### 参考サイト
 - [オンラインの PDF ファイルを URL から表示する（ダウンロードせずに）｜Android Kotlin 実践勉強会](https://note.com/suinaan/n/n9aba130caf08)
 
+# 変換
+
+## 文字列に変換する
+```
+Int.toString()
+```
+## 文字列からの変換
+| String型変換関数     | 変換後の型 | 
+| ------------------ | ---------- | 
+| String.toBoolean() | Boolean    | 
+| String.toByte()    | Byte       | 
+| String.toDouble()  | Double     | 
+| String.toFloat()   | Float      | 
+| String.toInt()     | Int        | 
+| String.toLong()    | Long       | 
+| String.toShort()   | Short      | 
+| String.toChar()    | Char       | 
+
+文字列を数値に変換できなかった場合は、NumberFormatExceptionが発生する。
+
+## 日付文字列⇄日付
+日付型を文字列に変換する`date`を`Stirng`にする。
+```
+val df = SimpleDateFormat("yyyy/MM/dd HH:mm:ss")
+val date = Date()
+println(df.format(date))
+```
+
 # 参考サイト
 - [Kotlin の require, check, assert 関数の使い分け](https://t-keita.hatenadiary.jp/entry/2020/12/05/223942)
   - 関数の項目の下記項目の参考
