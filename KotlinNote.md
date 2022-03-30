@@ -19,6 +19,31 @@
 ## 内部クラス参考URL 
 - [Kotlin内部クラスを理解する](https://qiita.com/kaleidot725/items/f2c6611648b04f7f41db)
 
+# 構文
+## when文
+Javaでの`switch文`や`if-else文`としても使用できる。  
+Javaの`switch文`はAndroidStudioでは`when文`に変換される。
+```
+val value = 2
+
+when (value) {
+    0 -> {// valueが0の場合の処理}
+    1 -> {// valueが1の場合の処理}
+    2 -> {// valueが2の場合の処理(今回はここに入る)}
+    else -> {// 上記のcase文に入らなかった場合の処理}
+}
+```
+条件を複雑にすると下記のように記載できる。  
+条件式でOR/ANDを書きたい場合には、`,`と`&&`を使用する
+```
+val value = 2
+
+when {
+    value != null && value == 0 -> {// valueがnullではなく、0の場合の処理}
+    value == 1, value == 2 -> {// valueが1か2の場合の処理}
+    els
+```
+
 # 関数
 ## 文字列の置換(replace関数)
 1. 指定した文字を置換する
