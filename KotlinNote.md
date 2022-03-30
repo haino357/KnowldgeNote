@@ -20,6 +20,46 @@
 - [Kotlin内部クラスを理解する](https://qiita.com/kaleidot725/items/f2c6611648b04f7f41db)
 
 # 関数
+## 文字列の置換(replace関数)
+1. 指定した文字を置換する
+```
+// 書式
+変数.replace("置換前の文字","置換後の文字")
+```
+文字列 “abc” の “b” を、大文字の “B” に置換する
+```
+val str = "abc"
+
+val str1 = str.replace("b","B")
+println(str1); // aBc
+```
+2. 指定した正規表現に該当する文字を置換する
+```
+// 書式
+変数.replace(Regex("正規表現"),"置換後の文字")
+```
+文字列 “a1b2c3” の中の数値（1、2、3）を空文字に置換する
+```
+val str = "a1b2c3"
+
+val str1 = str.replace(Regex("[1-3]"),"")
+println(str1) // abc
+```
+文字列 “a1b2c3” の中の数値（1、2、3）を、壱・弐・参 に置換する
+```
+val str = "a1b2c3"
+
+val str1 = str.replace(Regex("[1-3]")){
+    when(it.value){
+        "1" -> "壱"
+        "2" -> "弐"
+        "3" -> "参"
+        else -> it.value
+    }
+}
+println(str1) // a壱b弐c参
+```
+
 ## プログラムの実行可否を判断する関数
 Kotlinには、引数のBoolean型でプログラムの実行を判断する関数がある。
 - require
