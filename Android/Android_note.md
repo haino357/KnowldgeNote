@@ -188,6 +188,10 @@ xxx.apkはapkファイルまでのパスを入れる
 adb shell setprop debug.firebase.analytics.app <package_name>
 ```
 
+下記サイトのように記載はされているが、コマンドの実行場所が記載がないため、ぬまる原因になった。2つめのサイトでその原因を知ることになった。
+- [イベントのデバッグ](https://firebase.google.com/docs/analytics/debugview?hl=ja)
+- [Enable Firebase DebugView mode on an Android device](https://write.agrevolution.in/enable-firebase-debugview-mode-on-an-android-device-a6aa108acb56)
+
 ## ソフトキーボードがビューを押し上げないようにする
 `AndroidMainfest.xml`に下記を追加する。
 ```
