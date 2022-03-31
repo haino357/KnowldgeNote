@@ -65,6 +65,13 @@ $ sysctl -a machdep.cpu.brand_string
 machdep.cpu.brand_string: Apple M1
 ```
 
+**ホームディレクトリへ移動するコマンド**
+```
+cd ~
+または
+cd $home
+```
+
 ## シェルの種類確認
 ```
 echo $SHELL
