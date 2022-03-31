@@ -177,6 +177,17 @@ adb install xxx.apk
 ```
 xxx.apkはapkファイルまでのパスを入れる
 
+### AndroidデバイスでFirebaseDebugViewモードを有効にする方法
+ターミナルで`cdコマンド`で下記に移動する。
+```
+/Users/takayukishoji/Library/Android/sdk/platform-tools
+```
+
+下記コマンドを実行することでデバッグモードが有効になる。
+```
+adb shell setprop debug.firebase.analytics.app <package_name>
+```
+
 ## ソフトキーボードがビューを押し上げないようにする
 `AndroidMainfest.xml`に下記を追加する。
 ```
