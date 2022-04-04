@@ -326,3 +326,73 @@ android:ellipsize=”none”
 // 1行のみ表示する
 android:maxLines="1"
 ```
+
+### フォーカス
+#### focusable属性
+focusableは、Viewがフォーカスを取得できる（true）・できない（false）を指定する属性。
+**xmlファイルに記載する場合**
+```
+android:focusable="true"
+```
+**ktファイル上に記載する場合**
+```
+view.isFocusable = true
+```
+
+#### focusableInTouchMode属性
+focusableInTouchModeは、Viewをタッチ（スクリーン上でタッチ）することでフォーカスが取得できる（true）・できない（false）を指定する属性。
+**xmlファイルに記載する場合**
+```
+android:focusableInTouchMode="true"
+```
+**ktファイル上に記載する場合**
+```
+view.isFocusableInTouchMode = true
+```
+
+#### viewがタップされたかどうかを判定する処理
+**Activity**
+フォーカスが外れたかどうかを判定する。
+```
+edittext.setOnFocusChangeListener(object : OnFocusChangeListener() {
+  fun onFocusChange(v: View, hasFocus: Boolean) {
+    if (!hasFocus) {
+      //キーボード非表示
+      val imm: InputMethodManager =
+          getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+      if (imm != null) {
+        imm.hideSoftInputFromWindow(
+          v.getWindowToken(),
+          InputMethodManager.HIDE_NOT_ALWAYS
+        )
+      }
+    }
+  }
+})
+```
+viewがタップされたかどうかを判定する処理
+```
+override fun onTouchEvent(event: MotionEvent?): Boolean {
+        view.requestFocus()
+        return super.onTouchEvent(event)
+    }
+```
+**Fragment**
+onViewCreatedで下記を記載する。
+フォーカスが外れたかどうかを判定する。
+```
+edittext.setOnFocusChangeListener { v, hasFocus ->
+    if (!hasFocus) {
+        //キーボード非表示
+        val imm = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(v.windowToken, InputMethodManager.HIDE_NOT_ALWAYS)
+    }
+}
+```
+viewがタップされたかどうかを判定する処理
+```
+view.setOnTouchListener { v, event ->
+  view.requestFocus()
+  v?.onTouchEvent(event) ?: true
+}
+```
