@@ -53,3 +53,15 @@ APKを選択し、Nextを押下すると下記画面に遷移する。
 <img src="/Picture/ScreenShot/Generate APK02.png" width="600">
 
 上記画像から、APKの状態を選択し、`Finish`ボタンを押下し、完了。
+
+## Scratchファイル
+　Kotlinなどの実行可能なコードを保存するファイルで、デフォルトではプロジェクト外に保存されます。 プロジェクト内にあるファイルと違う点は、あらかじめプロジェクトをビルドしておけば、Scratchファイルのビルドだけで実行可能なため、実行までの時間が速いこと。
+　これは、IntelliJのIDE機能の一つ。
+
+**Scratchファイルの作成**
+
+<img src="/Picture/ScreenShot/Scratchファイルを作成.png" width="600">
+
+**コード記載と実行のイメージ**
+
+<img src="/Picture/ScreenShot/Scratchファイルを実行.png" width="600">
