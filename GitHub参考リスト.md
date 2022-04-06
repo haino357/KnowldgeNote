@@ -34,7 +34,11 @@
 - [Android](https://github.com/android)
   - [architecture-samples](https://github.com/android/architecture-samples)
   - [animation-samples](https://github.com/android/animation-samples)
+  - [user-interface-samples](https://github.com/android/user-interface-samples/tree/main/SplashScreen)
 - [DroidKaigi](https://github.com/DroidKaigi)
+
+## Community
+- [vscodejp](https://github.com/vscodejp)
 
 ## 個人GitHub
 - Yusuke Konishi：[@konifar](https://github.com/konifar)
