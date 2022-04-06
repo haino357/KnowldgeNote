@@ -11,6 +11,12 @@
 - [flutter_dictionary_hands_on_hand_out](https://github.com/YujiOnishi/flutter_dictionary_hands_on_hand_out/blob/master/%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E3%83%AC%E3%82%B8%E3%83%A5%E3%83%A1.pdf)
 - [flutter_dictionary_hands_on_hand_out](https://github.com/YujiOnishi/flutter_dictionary_hands_on_hand_out)
 
+## Dartファイルの新規作成
+`Project > lib > New > Dart File`で新規Dartファイルを作成できる。
+
+<img src="/Picture/ScreenShot/新規Dartファイル作成.jpeg" width="600">
+
+
 ## 参考URL
 - [Flutterの効率良い学び方](https://medium.com/flutter-jp/flutter-learning-c5640c5f05b9)
 - 
