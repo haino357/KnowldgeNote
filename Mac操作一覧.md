@@ -64,7 +64,10 @@ $ sysctl -a machdep.cpu.brand_string
 // 実行結果
 machdep.cpu.brand_string: Apple M1
 ```
-
+**IPアドレスを調べる**
+```
+ifconfig
+```
 **ホームディレクトリへ移動するコマンド**
 ```
 cd ~
