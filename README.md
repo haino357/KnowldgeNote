@@ -7,7 +7,6 @@
   - [AndroidStudio.md](Android/AndroidStudio.md)
 - [DevelopmentMethod.md](DevelopmentMethod.md)
 - [Flutter_note.md](Flutter_note.md)
-- [Flutter_note.md](Flutter_note.md)
 - [GitHub参考リスト.md](GitHub参考リスト.md)
 - [Gitチートシート.md](Gitチートシート.md)
 - [Java_note.md](Java_note.md)
@@ -21,6 +20,7 @@
 - [会社とは.md](会社とは.md)
 - [FirebaseNote.md](FirebaseNote.md)
 - [ReadBookNote.md](ReadBookNote.md)
+- [TaskManagement.md](TaskManagement.md)
 
 ## CommentList
 - CREATE : 新規ファイル作成時
