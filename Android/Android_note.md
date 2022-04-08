@@ -306,21 +306,6 @@ button.visibility = View.INVISIBLE
 button.visibility = View.GONE
 ```
 
-### EditTextViewのtext省略
-```
-// 文字列が枠に収まりきらない場合、文頭を省略
-android:ellipsize="start"
-
-// 文字列が枠に収まりきらない場合、中略
-android:ellipsize="middle"
-
-// 文字列が枠に収まりきらない場合、末尾を省略
-android:ellipsize="end"
-
-// 文字を見切れたまま表示する
-android:ellipsize=”none”
-```
-
 ### EditTextView
 **textの行数を指定する**
 ```
@@ -336,6 +321,21 @@ android:maxLength="4"
 ```
 android:hint="password"
 ```
+**EditTextViewのtext省略**
+```
+// 文字列が枠に収まりきらない場合、文頭を省略
+android:ellipsize="start"
+
+// 文字列が枠に収まりきらない場合、中略
+android:ellipsize="middle"
+
+// 文字列が枠に収まりきらない場合、末尾を省略
+android:ellipsize="end"
+
+// 文字を見切れたまま表示する
+android:ellipsize=”none”
+```
+
 ### フォーカス
 #### focusable属性
 focusableは、Viewがフォーカスを取得できる（true）・できない（false）を指定する属性。
