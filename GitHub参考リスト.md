@@ -45,6 +45,8 @@
 - [uhooi](https://github.com/uhooi)
 - [mhidaka](https://github.com/mhidaka)
 - [Mori Atsushi](https://github.com/Mori-Atsushi)
+- [Masayuki Ono (mono)](https://github.com/mono0926)
+  - Flutterのすごい人
 
 ## GitHub　Actions
 GitHub上にて行われるイベント(Push,Issue,Releaseなど)をトリガーとしてワークフローを起動し様々な動作を自動化することができる機能。  
