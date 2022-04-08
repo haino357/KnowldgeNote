@@ -306,6 +306,39 @@ button.visibility = View.INVISIBLE
 button.visibility = View.GONE
 ```
 
+### TextView
+#### 自動リンク
+URLやメールアドレスなどのリンクを自動的に検出してクリック可能なリンクに変換するかどうかを制御する。デフォルト値は「none」で、この機能は無効になっている。
+[公式ドキュメント](https://developer.android.com/reference/android/widget/TextView#attr_android:autoLink)
+```
+// URLリンクの場合
+android:autoLink = "web"
+```
+
+<img src="/Picture/ScreenShot/TextView自動リンク一覧表.png" width="600">
+
+**メールアドレスリンクをつける**
+```
+val text_mail = TextView(this)
+
+text_mail.text = "sample@test.com"
+Linkify.addLinks(text_mail, Linkify.EMAIL_ADDRESSES)
+```
+**電話番号リンクをつける**
+```
+val text_tell = TextView(this)
+
+text_tell.text = "sample@test.com"
+Linkify.addLinks(text_tell, Linkify.PHONE_NUMBERS)
+```
+**URLリンクをつける**
+```
+val text_url = TextView(this)
+
+text_url.text = "sample@test.com"
+Linkify.addLinks(text_url, Linkify.WEB_URLS)
+```
+
 ### EditTextView
 **textの行数を指定する**
 ```
