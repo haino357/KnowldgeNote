@@ -72,6 +72,11 @@ $ git stash apply stash@{0}
 $ git stash apply stash@{0} --index
 ```
 
+**待避した作業を戻して消す**
+```
+$ git stash pop stash@{1}
+```
+
 **退避した作業を消す**
 - stashを使用して退避した作業を元に戻しても、退避した情報は残ったまま。
 - `git stash list`を実行すると、退避した情報はそのまま残っている.そのため、退避した作業を消すには、以下のコマンドを使用する。
