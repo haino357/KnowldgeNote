@@ -11,7 +11,7 @@ git config --global user.name "Your Name"
 git config --global user.email "email@～"
 ```
 
-## コミットを取り消す方法
+## コミットを元に戻す方法
 ### ローカルリポジトリの場合は下記のみでOK
 ```
 git reset --hard HEAD^
@@ -26,7 +26,7 @@ git reset --hard HEAD^
     - `HEAD~`と`HEAD^`と`@^`は同じ意味。
     - `HEAD^^^`と`HEAD~3`と`HEAD~~~`と`HEAD~{3}`と`@^^^`は同じ意味。
 
-## コミットを取り消す方法
+## コミットログを残して上書きする方法
 作業ツリーを指定したコミット時点の状態にまで戻し、コミットを行う（コミットをなかったことにはせず、逆向きのコミットをすることで履歴を残す）ためには下記コマンドを叩く。
 ```
 git revert コミットのハッシュ値
