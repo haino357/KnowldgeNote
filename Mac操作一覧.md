@@ -52,7 +52,7 @@
 ## Macの画面をロックする
 - `command + control + q`
 
-## Spotlightウインドウを開く/閉じる
+## Spotlighte検索ウインドウを開く/閉じる
 - `command + space`
 
 # ターミナル
