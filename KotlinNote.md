@@ -217,6 +217,33 @@ val date = Date()
 println(df.format(date))
 ```
 
+# 演算子
+## Null合体演算子（エルビス演算子）
+**概要**
+Null合体演算子`?:`を使うと、変数が`null`だった時のデフォルト値を指定できる。
+**サンプル**
+```
+var s:String? = null
+println(s ?: "Default") // Default
+
+s = "test"
+println(s ?: "Default") // test
+```
+`null`の際に例外をスローすることもできる。
+```
+var s1: String? = null
+println(s1 ?: throw NullPointerException())
+```
+`null`の際に無名関数を実行することもできる。
+```
+var n = 10
+var s1:String? = null
+var s2 = s1 ?: {
+    val s = (1..n).joinToString(",")
+    s  // 戻り値(return不要)
+}()
+println(s2) // 1,2,3,4,5,6,7,8,9,10
+```
 # 参考サイト
 - [Kotlin の require, check, assert 関数の使い分け](https://t-keita.hatenadiary.jp/entry/2020/12/05/223942)
   - 関数の項目の下記項目の参考
