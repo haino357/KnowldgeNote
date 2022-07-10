@@ -34,6 +34,10 @@
 
 ## Finderでファイルパスをコピーする
 - `option + command + c`
+
+## Finderでファイルパスで検索する
+- `command + shift + G`
+
 ## [MacでAppを強制的に終了する方法](https://support.apple.com/ja-jp/HT201276)
 `option + command + esc`
 
