@@ -142,6 +142,35 @@ flutter_localizations:
 DateTime.parse('2020-09-30 12:30:50'); 
 ```
 
+## ライブラリ
+### ライブラリの導入方法
+- ライブラリは`pubspec.yaml`に追記することで追加することができる
+- ライブラリの最新バージョンをインストールする場合はバージョンを指定しなくてもいい
+- バージョンを指定する場合は記載する
+
+### ライブラリ情報一覧
+- 画面のロック
+  - [secure_application](https://pub.dev/packages/secure_application)
+- スクリーンショット・画面録画禁止
+  - [screen_protector](https://pub.dev/packages/screen_protector)
+- スプラッシュ画面
+  - [flutter_native_splash](https://pub.dev/packages/flutter_native_splash)
+- Webview
+  - [webview_flutter](https://pub.dev/packages/webview_flutter)
+  - [flutter_inappwebview](https://pub.dev/packages/flutter_inappwebview)
+- Jsonパース
+  - [json_annotation](https://pub.dev/packages/json_annotation)
+  - [build_runner](https://pub.dev/packages/build_runner)
+  - [json_serializable](https://pub.dev/packages/json_serializable)
+- API通信
+  - [retrofit](https://pub.dev/packages/retrofit)
+  - [dio](https://pub.dev/packages/dio)
+  - [retrofit_generator](https://pub.dev/packages/retrofit_generator)
+  - [freezed](https://pub.dev/packages/freezed)
+- 音楽系
+  - [just_audio](https://pub.dev/packages/just_audio)
+  - [soundpool](https://pub.dev/packages/soundpool)
+
 ## 参考URL
 - [Flutterの効率良い学び方](https://medium.com/flutter-jp/flutter-learning-c5640c5f05b9)
 - 
