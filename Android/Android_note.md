@@ -492,3 +492,108 @@ override fun onDestroy() {
         _binding = null
     }
 ```
+
+## 文字列リソース管理
+Androidでは文字列アンれんのリソースを下記ファイルで管理する。
+下記ファイルはプロジェクト作成時に自動的に作成されるファイル。
+同一の文字列が複数箇所にある場合などは、これを利用することにより、複数箇所の修正をする必要がなくなる。
+```
+res/values/strings.xml
+```
+
+### 基本的な使い方
+**strings.xml**には下記のように記載する。
+```
+<string name="app_name">Application</string>
+```
+アプリケーションからは下記のように記載し、文字列情報を取得する。
+```
+getString(R.string.app_name)
+
+or
+
+context.getString(R.string.app_name)
+```
+
+### arrayの定義
+`strings.xml`では単純なkey-valueだけでなく, arrayも定義することができる。また、`array.xml`を新規作成してそちらに記述しても問題ない。
+```
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <string name="app_name">Test</string>
+ 
+    <string-array name="ARRAY_STR">
+        <item>犬</item>
+        <item>猫</item>
+        <item>鳥</item>
+    </string-array>
+ 
+    <integer-array name="ARRAY_INT">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </integer-array>
+ 
+    <array name="ARRAY_COLOR">
+        <item>#FFFF0000</item>
+        <item>#FF00FF00</item>
+        <item>#FF0000FF</item>
+    </array>
+ 
+    <array name="ARRAY_FLOAT">
+        <item>1.2</item>
+        <item>1.23</item>
+        <item>1.234</item>
+        <item>1.2345</item>
+    </array>
+ 
+    <!--  2次元配列に -->
+    <array name="ARRAY_MULTI">
+        <item >@array/ARRAY_STR</item>
+        <item >@array/ARRAY_INT</item>
+        <item >@array/ARRAY_COLOR</item>
+        <item >@array/ARRAY_FLOAT</item>
+    </array>
+ 
+</resources>
+```
+アプリケーションからは下記のように記載し、取得する。
+```
+getResources().getStringArray(R.array.ARRAY_STR)
+
+or
+
+context.getResources().getStringArray(R.array.ARRAY_STR)
+```
+
+### 値の展開
+文字列展開することができる. printf formatのように使う.
+```
+<!-- %1: 引数1, $d: 数字 -->
+<string name="hoge">Hello %1$d</string>
+<!-- %1: 引数1, %2: 引数2, $s: 文字列 -->
+<string name="hogestr">%1$s %2$d %1$s</string>
+```
+アプリケーション側では, 下のように指定する。
+```
+getString(R.string.hoge, 100)); // Hello 100
+getString(R.string.hogestr, "value", 100)); // value 100 value
+```
+`%1$s`は「第1引数の文字列」をここに展開しろ. `%2$d`は「第2引数の数字」をここに展開しろ. という意味になる。
+
+### plurals
+pluralsという要素は、quantity stringsと呼ばれ, 数字(量)の大きさに応じて, 文字列を変化させることが出来る. switch分岐が出来るイメージ.
+```
+<plurals name="number">
+    <item quantity="one">one</item>
+    <item quantity="other">other %1$d</item>
+</plurals>
+```
+quantityには, zero, one, two, few, many, otherが指定できる。
+アプリケーション側では下記のように記述する。
+```
+getResources().getQuantityString(R.plurals.number, 1, 1)); // one
+getResources().getQuantityString(R.plurals.number, 10, 100)); // other 100
+```
+第二引数にquantityに与える数字を指定します. 1ならone, 0ならzeroがそれぞれ対応します. 複数形の場合に文字列を変えたいときなどに有効。
