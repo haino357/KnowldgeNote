@@ -217,6 +217,20 @@ val date = Date()
 println(df.format(date))
 ```
 
+## Uri → String
+```
+var uri: Uri
+val stringUri: String
+stringUri = uri.toString()
+```
+
+## String → Uri
+```
+val uri: Uri
+var stringUri: String
+uri = Uri.parse(stringUri)
+```
+
 # 演算子
 ## Null合体演算子（エルビス演算子）
 **概要**
@@ -244,6 +258,16 @@ var s2 = s1 ?: {
 }()
 println(s2) // 1,2,3,4,5,6,7,8,9,10
 ```
+
+# [gson](https://github.com/google/gson)
+## 設定のDownload
+Gradle:
+```
+dependencies {
+  implementation 'com.google.code.gson:gson:2.9.0'
+}
+```
+
 # 参考サイト
 - [Kotlin の require, check, assert 関数の使い分け](https://t-keita.hatenadiary.jp/entry/2020/12/05/223942)
   - 関数の項目の下記項目の参考
