@@ -171,6 +171,23 @@ DateTime.parse('2020-09-30 12:30:50');
   - [just_audio](https://pub.dev/packages/just_audio)
   - [soundpool](https://pub.dev/packages/soundpool)
 
+## FlutterでOSを判断する
+Flutteでのアプリ開発において、iOSとAndroidを判別したい場合には下記コードを書く。
+```
+import 'dart.io'
+
+// OS名を取得、自分で対応したい場合
+string os = Platform.operatingSystem;
+
+// OSごとに判定するプロパティを利用する場合
+bool isAndroid = Platform.isAndroid;
+bool isAndroid = Platform.isIOS;
+bool isAndroid = Platform.isLinux;
+bool isAndroid = Platform.isMacOS;
+bool isAndroid = Platform.isWindows;
+```
+
+
 ## 参考URL
 - [Flutter公式ドキュメント](https://docs.flutter.dev/)
 - [Flutterの効率良い学び方](https://medium.com/flutter-jp/flutter-learning-c5640c5f05b9)
