@@ -188,6 +188,27 @@ bool isAndroid = Platform.isMacOS;
 bool isAndroid = Platform.isWindows;
 ```
 
+## 処理を一時的に止める方法
+```
+//インポートするライブラリ
+import 'dart:async';
+
+//処理を待つメソッド
+await Future.delayed(Duration(seconds: 3));
+
+//awaitが無くても大丈夫です
+Future.delayed(Duration(seconds: 3));
+
+//secondsの所は下記の値でも指定可能
+days //日
+hours //時
+minutes　//分
+seconds　//秒
+milliseconds　//ミリ秒
+microseconds　//マイクロ秒
+```
+インポートライブラリ：[dart:async library](https://api.flutter.dev/flutter/dart-async/dart-async-library.html)
+
 
 ## 参考URL
 - [Flutter公式ドキュメント](https://docs.flutter.dev/)
