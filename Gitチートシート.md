@@ -117,6 +117,7 @@ $ git stash clear
 ```
 // 強制的にPushする
 git push -f origin master
+git push origin +master
 ```
 
 ## Git管理下でファイル名の変更する方法：git mvコマンド
