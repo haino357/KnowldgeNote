@@ -45,5 +45,12 @@ Wikipediaによると下記のように記載される。
 > すなわち、ソフトウェアの仕様の一部を変更したときには、それにより影響を受ける仕様は、そのクラスの仕様でなければならない
 > 
 
+## 継続的インテグレーション
+
+## 継続的デリバリー
+
+## リーンソフトウェア開発
+
+
 ## 参考サイト
 - [単一責任の原則（Single responsibility principle）について、もう一度考える](https://www.ogis-ri.co.jp/otc/hiroba/others/OOcolumn/single-responsibility-principle.html)
