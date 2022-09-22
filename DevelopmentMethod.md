@@ -52,5 +52,36 @@ Wikipediaによると下記のように記載される。
 ## リーンソフトウェア開発
 
 
+## 開発プロセス
+### 真偽値の命名
+相反する2つの状態を管理する変数(フラグ)を定義する場合は下記の条件のごくを利用すると、コードの可読性が上がる。
+- より **「正」** の意味を持つ
+- より **「肯定的」** な意味を持つ
+- より **「ポジティブ」** な意味を持つ
+一例として
+```
+isOpen：開いている
+isVisible：見えている
+isEnabled：利用できる
+```
+これらは否定した場合もすんなり理解できる。
+```
+!isOpen：開いていない
+!isVisible：見えていない
+!isEnabled：利用できない
+```
+逆に否定系の命名をした場合は否定の否定になり、可読性が下がると思われる。
+```
+isClosed：閉じてる
+isHidden：見えない
+isDisabled：利用できない
+```
+上記を否定すると、下記のように可読性が下がる。
+```
+!isClosed：閉じていない
+!isHidden：見えていない
+!isDisabled：利用できていない
+```
+
 ## 参考サイト
 - [単一責任の原則（Single responsibility principle）について、もう一度考える](https://www.ogis-ri.co.jp/otc/hiroba/others/OOcolumn/single-responsibility-principle.html)
