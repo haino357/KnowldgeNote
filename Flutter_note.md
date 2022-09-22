@@ -210,6 +210,16 @@ microseconds　//マイクロ秒
 インポートライブラリ：[dart:async library](https://api.flutter.dev/flutter/dart-async/dart-async-library.html)
 
 
+## Widget
+### Card
+#### 背景色を透明にする方法
+```
+Card(
+  color: Colors.transparent,
+  elevation: 0,
+)
+```
+
 ## 参考URL
 - [Flutter公式ドキュメント](https://docs.flutter.dev/)
 - [Flutterの効率良い学び方](https://medium.com/flutter-jp/flutter-learning-c5640c5f05b9)
