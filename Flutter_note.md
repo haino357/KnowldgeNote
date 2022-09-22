@@ -219,7 +219,14 @@ Card(
   elevation: 0,
 )
 ```
-
+### ListView
+#### スクロールを無効にする方法
+```
+ListView(
+  physics: const NeverScrollableScrollPhysics(), // 左記を追加する
+  children: [~~],
+)
+``` 
 ## 参考URL
 - [Flutter公式ドキュメント](https://docs.flutter.dev/)
 - [Flutterの効率良い学び方](https://medium.com/flutter-jp/flutter-learning-c5640c5f05b9)
