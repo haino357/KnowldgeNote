@@ -294,6 +294,17 @@ spaceEvenly：使用するWidgetの中身を開始、終了、子の間に空き
 ### SingleChildScrollView
 スクロールビューの際に使用する
 
+### Visibility
+Widgetの表示と非表示を切り替えるために使用する
+- 表示：`visible: true,`
+- 非表示：`visible: false,`
+```
+Visibility(
+  visible: true, 
+  child: const Text('Visibilityテスト'),
+),
+```
+
 ## 参考URL
 - [Flutter公式ドキュメント](https://docs.flutter.dev/)
 - [Flutterの効率良い学び方](https://medium.com/flutter-jp/flutter-learning-c5640c5f05b9)
