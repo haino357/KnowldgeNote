@@ -243,6 +243,15 @@ ListView(
 )
 ``` 
 ### Container
+とても使い勝手が良いWidgetである。<br>
+しかし、調整できるプロパティが豊富であるため、使用する意図が一目で理解できない問題がある。<br>
+また、豊富なプロパティを内包するがゆえに、重くなりパフォーマンスに影響が出る可能性がある。<br>
+Widgetの意図を明確にするために、`Container`の代わりに下記Widgetを利用することを推奨
+- `Padding`：パディングを調整するWIdget
+- `Align`：子要素の配置を指定するWidget
+- `ColoredBox`：内部の色を指定するWidget
+- `SizeBox`：高さや幅のサイズを指定するWidget
+- `DecoratedBox`：デコレーションを調整するWidget
 ```
 Container(
   height: 50, // 縦幅
@@ -255,9 +264,10 @@ Container(
       color: Colors.blue,),
     // 枠線の角丸設定
     borderRadius: BorderRadius.circular(8),
-      color: Colors.red,
-      width: 6,),
-    // color: Colors.red,  // 背景色
+    color: Colors.red,
+    width: 6,
+  ),
+  // color: Colors.red,  // 背景色の指定をする、ただし、BoxDecorationがある場合は同時に使えない
   child: const Text(
     'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろ',
     overflow: TextOverflow.ellipsis, // はみ出したことを示すために省略記号を使用
@@ -266,6 +276,45 @@ Container(
     ),
   ),
 ),
+```
+#### 角丸の指定方法
+**全体的に角丸**
+```
+Container(
+  width: 100,
+  height: 100,
+  decoration: BoxDecoration(
+    color: Colors.red,
+    borderRadius: BorderRadius.circular(10), // ここが指定箇所
+  ),
+),
+```
+**一部に角丸**
+```
+Container(
+  width: 100,
+  height: 100,
+  decoration: BoxDecoration(
+    color: Colors.red,
+    borderRadius: const BorderRadius.only(
+      topLeft: Radius.circular(50), // 左上を丸める
+      topRight: Radius.circular(50), // 右上を丸める
+      bottomLeft: Radius.circular(50), // 左下を丸める
+      bottomRight: Radius.circular(50), // 右下を丸める
+    ), // ここが指定箇所
+  ),
+),
+```
+**円**
+```
+Container(
+  width: 100,
+  height: 100,
+  decoration: const BoxDecoration(
+    color: Colors.red,
+    shape: BoxShape.circle,
+  ),
+)
 ```
 ### Colum & Row
 Colum：Widgetを縦に並べるために使用する。
