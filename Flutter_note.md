@@ -14,7 +14,7 @@
 ## Dartファイルの新規作成
 `Project > lib > New > Dart File`で新規Dartファイルを作成できる。
 
-<img src="/Picture/ScreenShot/新規Dartファイル作成.jpeg" width="600">
+<img src="/Picture/Flutter/新規Dartファイル作成.jpeg" width="600">
 
 ## Dartの型
 **型の種類**
@@ -211,6 +211,21 @@ microseconds　//マイクロ秒
 
 
 ## Widget
+### Text
+#### 長い文字列を省略する
+```
+Text(
+  'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろ',
+  overflow: TextOverflow.ellipsis, // はみ出したことを示すために省略記号を使用
+),
+```
+#### 文字列の行数を指定する
+```
+Text(
+  'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろ',
+  maxLines: 2, // 表示する文字列の行数を指定する
+),
+```
 ### Card
 #### 背景色を透明にする方法
 ```
@@ -227,6 +242,58 @@ ListView(
   children: [~~],
 )
 ``` 
+### Container
+```
+Container(
+  height: 50, // 縦幅
+  width: 300, // 横幅
+  padding: const EdgeInsets.all(8), // 内側の余白(padding)
+  margin: const EdgeInsets.all(8), // 外側の余白(margin)
+  decoration: BoxDecoration(
+    // 枠線の色や太さ設定の指定
+    border: Border.all(
+      color: Colors.blue,),
+    // 枠線の角丸設定
+    borderRadius: BorderRadius.circular(8),
+      color: Colors.red,
+      width: 6,),
+    // color: Colors.red,  // 背景色
+  child: const Text(
+    'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろ',
+    overflow: TextOverflow.ellipsis, // はみ出したことを示すために省略記号を使用
+    style: TextStyle(
+      color: Colors.white,
+    ),
+  ),
+),
+```
+### Colum & Row
+Colum：Widgetを縦に並べるために使用する。
+Row：Widgetを横に並べるために使用する。
+
+```
+Colum(
+  mainAxisAlignment: MainAxisAlignment.start,
+  children: <Widget>[],
+),
+```
+#### MainAxisAlignment
+start：使用するWidgetの開始位置から配置する<br>
+<img src="/Picture/Flutter/MainAxisAlignment_start.png" width="200"><br>
+end：使用するWidgetの終了位置から配置する<br>
+<img src="/Picture/Flutter/MainAxisAlignment_end.png" width="200"><br>
+center：使用するWidgetの中央位置から配置する<br>
+<img src="/Picture/Flutter/MainAxisAlignment_center.png" width="200"><br>
+spaceBetween：使用するWidgetの中身を均等なスペースをおいて配置する<br>
+<img src="/Picture/Flutter/MainAxisAlignment_spaceBetween.png" width="200"><br>
+spaceAround：使用するWidgetの中身の両端を均等なスペースをおいて配置する<br>
+<img src="/Picture/Flutter/MainAxisAlignment_spaceAround.png" width="200"><br>
+spaceEvenly：使用するWidgetの中身を開始、終了、子の間に空きスペースを均等に配置する<br>
+<img src="/Picture/Flutter/MainAxisAlignment_spaceEvenly.png" width="200"><br>
+
+### SingleChildScrollView
+スクロールビューの際に使用する
+
 ## 参考URL
 - [Flutter公式ドキュメント](https://docs.flutter.dev/)
 - [Flutterの効率良い学び方](https://medium.com/flutter-jp/flutter-learning-c5640c5f05b9)
