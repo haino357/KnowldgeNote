@@ -11,6 +11,221 @@
 - [flutter_dictionary_hands_on_hand_out](https://github.com/YujiOnishi/flutter_dictionary_hands_on_hand_out/blob/master/%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E3%83%AC%E3%82%B8%E3%83%A5%E3%83%A1.pdf)
 - [flutter_dictionary_hands_on_hand_out](https://github.com/YujiOnishi/flutter_dictionary_hands_on_hand_out)
 
+## Flutterコマンド
+### $ flutter precache
+FlutterのSDK内部では必要なデータをGoogleのインフラサーバーから必要なタイミングでダウンロードしている。それを意図的に行うためのコマンド。普通のユーザは基本的に利用する必要ない。
+
+### $ flutter doctor
+インストールバージョンやインストールされてないものが無いかなど、Flutter環境診断をする。<br>
+Flutter実行出来なくなったなど、困ったらまずこれをやってみると良い。<br>
+さらに`-v`オプションをつける事で詳細情報を確認できる。
+```
+flutter doctor -v
+```
+
+### $ flutter --version
+現在のSDKバージョンを確認するときに利用する。`flutter doctor`は時間がかかるので、バージョンだけ調べたいときはこれを使う。
+
+### $ flutter upgrade
+Flutterのバージョンをアップデートする時に利用する。
+
+### $ flutter downgrade
+Flutterのバージョンを一つ前にダウングレードする時に利用する。
+
+### $ flutter channel
+現在利用しているFlutter SDKのチャンネルを確認する。
+```
+$ flutter channel                                 
+
+Flutter channels:
+  master
+  beta
+* stable
+```
+| チャンネル名 | 内容                                                                                                               | 
+| ------------ | ------------------------------------------------------------------------------------------------------------------ | 
+| master       | githubのマスターブランチ。不安定な可能性がありますが、最新を使う場合はこれ                                         | 
+| dev          | masterに対して自動テスト等をパスした一定品質が担保されているもの (α版相当, Windows/macOS/Linux版はここに含まれる) | 
+| beta         | ベータ版機能が有効になったもの                                                                                     | 
+| stable       | 正式リリースのステーブル版。普通の開発者はこれを利用                                                               | 
+
+### $ flutter channel チャンネル名
+オプションで指定したチャンネルに変更される。
+```
+$ flutter channel beta
+```
+
+### $ flutter devices
+Flutterアプリとして実行可能なデバイス一覧を確認できます。<br>
+Android/iOSエミュレータの場合は、事前に立ち上げた状態でなければ表示されない。
+```
+=> % flutter devices
+3 connected devices:
+
+Pixel 3a XL (mobile) • 9A2AX0KYUB • android-arm64  • Android 12 (API 32)
+macOS (desktop)      • macos      • darwin-arm64   • macOS 11.3.1 20E241 darwin-arm
+Chrome (web)         • chrome     • web-javascript • Google Chrome 105.0.5195.125
+
+```
+
+### $ flutter config
+`~/.flutter_settings`に設定ファイルがあり、これを更新するコマンド。ファイルを直接編集も可能。一度設定したらその後はほぼ触る事が無いと思われる。<br>
+※Windows/Linux/macOSを有効にしておくと、新規プロジェクト作成時にそれら向けのディレクトリが作成されます。
+#### Flutter-Webを有効化する
+```
+$ flutter config --enable-web
+```
+#### Flutter-Desktop-Linuxを有効化する
+```
+$ flutter config --enable-linux-desktop
+```
+#### Flutter-Desktop-macOSを有効化する
+```
+$ flutter config --enable-macos-desktop
+```
+#### Flutter-Desktop-Windowsを有効化する
+```
+$ flutter config --enable-windows-desktop
+```
+
+### $ flutter create
+Flutterプロジェクト新規作成時に利用する。オプションの最後に出力先のディレクトリ名を指定する。
+| オプション             | 内容                                                                                          | 
+| ---------------------- | --------------------------------------------------------------------------------------------- | 
+| -t, --template=        | app, module, package, pluginのいずれかを指定。デフォルトはapp                                 | 
+| --org                  | オーガナイゼーションを指定。デフォルトはcom.example                                           | 
+| --project-name         | Flutterプロジェクト名を指定                                                                   | 
+| -i, --ios-language     | iOS向けプラットフォーム側のコードの言語でobjc, swiftのいずれかを指定。デフォルトはswift       | 
+| -a, --android-language | Android向けプラットフォーム側のコードの言語でjava, kotlinのいずれかを指定。デフォルトはkotlin | 
+| --description          | プロジェクト説明文。デフォルトは"A new Flutter project."                                      | 
+
+サンプルコマンド
+```
+$ flutter create -t app --org com.hoge --project-name ¥
+                 example -i swift -a kotlin ¥
+                 --description "Example Flutter project." ¥
+                 ./example_app
+```
+一度プロジェクトを作成後、そのプロジェクトディレクトリで`$flutter create .`を実行する事で、現在有効なプラットフォーム`andoid/, linux/など`、足りていないのテンプレートだけ生成してくれる。
+
+### $ flutter clean
+ビルド時に生成されるファイル群のクリーン (削除) 時に利用する。`build`と`.dart_toolディレクトリ`を削除してくれます。
+
+### $ flutter pub get
+pubspec.yamlを更新したら実行するもの。プラグインのライブラリなどを取得したり更新する。
+
+### $ flutter pub deps
+ライブラリの依存関係をツリーで表示してくれる。
+
+### $ flutter build xxx
+ターゲット環境 (xxx) を指定してビルドだけ行う。成果物は`./build/xxx`以下に生成される。デフォルトはリリースモードでのビルドになる。
+| オプション    | 内容                                                                                                 | 
+| ------------- | ---------------------------------------------------------------------------------------------------- | 
+| aar           |                                                                                                      | 
+| apk           | Android APKファイル                                                                                  | 
+| appbundle     | Android App Bundleファイル                                                                           | 
+| bundle        | Flutterのフォントや画像等のバンドルのビルド(flutter_assetsディレクトリ以下, DartのJIT用バイトコード) | 
+| iso           | iOS向けビルド                                                                                        | 
+| ios-framework | .framework向けビルド                                                                                 | 
+| web           | Webアプリ向け                                                                                        | 
+| macos         | macOSデスクトップ向け(デフォルトはリリースモードでのビルド)                                          | 
+| linux         | Linuxデスクトップ向け(デフォルトはリリースモードでのビルド)                                          | 
+| windows       | Windowsデスクトップ向け(デフォルトはリリースモードでのビルド)                                        | 
+
+#### --target-platformオプション
+ターゲットアーキテクチャを指定してビルドすることが可能。
+```
+$ flutter build apk --target-platform=android-arm64
+```
+
+#### --analyze-sizeオプション
+`--analyze-size`オプションを付けることで、ビルド成果物のサイズ情報を確認することができる。
+```
+$ flutter build macos --analyze-size
+Building macOS application...                                           
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  sample.app                                                               35 MB
+  sample.app/
+    Contents/
+      _CodeSignature                                                        9 KB
+      MacOS                                                                66 KB
+      Resources                                                           246 KB
+      Frameworks                                                           34 MB
+      Dart AOT symbols accounted decompressed size                          3 MB
+        package:flutter                                                     2 MB
+        dart:core                                                         306 KB
+        dart:typed_data                                                   221 KB
+        dart:ui                                                           191 KB
+        dart:async                                                        115 KB
+        dart:collection                                                   110 KB
+        dart:convert                                                       58 KB
+        dart:isolate                                                       40 KB
+        dart:io                                                            38 KB
+        package:vector_math                                                33 KB
+        dart:developer                                                     10 KB
+        package:typed_data/
+          src/
+            typed_buffer.dart                                               7 KB
+        package:collection/
+          src/
+            priority_queue.dart                                             5 KB
+        dart:math                                                           4 KB
+        dart:ffi                                                            4 KB
+        package:sample/
+          main.dart                                                         3 KB
+        dart:vmservice_io                                                   2 KB
+        dart:mirrors                                                       668 B
+        dart:nativewrappers                                                382 B
+        Never                                                               63 B
+      Info.plist                                                            2 KB
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+A summary of your macOS bundle analysis can be found at: /Users/kurun/.flutter-devtools/macos-code-size-analysis_01.json
+
+To analyze your app size in Dart DevTools, run the following command:
+flutter pub global activate devtools; flutter pub global run devtools --appSizeBase=macos-code-size-analysis_01.json
+```
+
+### $ flutter run
+プロジェクトのディレクトリ直下で実行するとdevicesに見えているターゲット (Android/iOS優先） 向けにpub getやビルト、インストールまで一連の作業を実行する。
+
+#### $ flutter run --release
+リリースモードで実行する。
+
+#### $ flutter run --debug
+デバッグモードで実行する。
+
+#### $ flutter run -d xxx
+ターゲットデバイスを指定する場合には-dオプションを利用する。flutter devicesで表示されているデバイスのIDを指定する。
+```
+$ flutter run -d macOS
+```
+
+#### $ flutter run --verbose
+flutter runコマンド実行中の詳細ログを表示する。
+
+### $ flutter install
+ビルド済みのインストールパッケージをデバイスにインストールする。
+
+### $ flutter test
+プロジェクト直下のtestディレクトリのユニットテストを実行する。
+
+### $ flutter drive
+Flutterアプリのインテグレーションテスト実行コマンド。
+```
+$ flutter drive --target=test_driver/sample_perf.dart
+```
+
+### $ flutter screenshot
+現在接続しているデバイスのスクリーンショットを取得する。出力先を指定する場合は、--outオプション (ファイル名も指定必要) を利用する。
+
+### $ flutter --help
+ヘルプメッセージを表示する。Flutterコマンドの良いところは、以下のように必要なオプションの後に--helpを付けるとそのオプションに対するヘルプを表示してくれる点。
+```
+$ flutter --help
+$ flutter run --help
+```
+
 ## Dartファイルの新規作成
 `Project > lib > New > Dart File`で新規Dartファイルを作成できる。
 
