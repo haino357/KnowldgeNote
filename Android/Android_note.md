@@ -177,6 +177,20 @@ adb install xxx.apk
 ```
 xxx.apkはapkファイルまでのパスを入れる
 
+### adbコマンドでエミュレータをキルする
+`adb devices`コマンドで起動しているエミュレータを調べる<br>
+```
+% adb devices
+List of devices attached
+emulator-5558	device
+emulator-5556	device
+emulator-5554	device
+```
+下記のコマンドで指定のエミュレータをキルする
+```
+adb -s emulator-5554 emu kill
+```
+
 ### AndroidデバイスでFirebaseDebugViewモードを有効にする方法
 ターミナルで`cdコマンド`で下記に移動する。
 ```
