@@ -47,6 +47,10 @@
 - [Mori Atsushi](https://github.com/Mori-Atsushi)
 - [Masayuki Ono (mono)](https://github.com/mono0926)
   - Flutterのすごい人
+- [Satoshi Nakajima](https://github.com/snakajima)
+  - 元Microsoftで右クリックを作った人
+  - 最近Web3の人になっているガチの人
+  - [Cryptocoders-wtf/assetstore-contract](https://github.com/Cryptocoders-wtf/assetstore-contract?utm_source=pocket_mylist)
 
 ## GitHub　Actions
 GitHub上にて行われるイベント(Push,Issue,Releaseなど)をトリガーとしてワークフローを起動し様々な動作を自動化することができる機能。  
