@@ -206,6 +206,18 @@ adb shell setprop debug.firebase.analytics.app <package_name>
 - [イベントのデバッグ](https://firebase.google.com/docs/analytics/debugview?hl=ja)
 - [Enable Firebase DebugView mode on an Android device](https://write.agrevolution.in/enable-firebase-debugview-mode-on-an-android-device-a6aa108acb56)
 
+## Androidエミュレータ
+### エラー対処
+```
+emulator: ERROR: Running multiple emulators with the same AVD is an experimental feature. Please use -read-only flag to enable this feature.
+```
+`.android/avd/端末名.avd/`に移動し下記の3つのファイルを削除する。
+```
+cache.img
+hardware-qemu.ini.lock 
+multiinstance.lock  
+```
+
 ## ソフトキーボードがビューを押し上げないようにする
 `AndroidMainfest.xml`に下記を追加する。
 ```
