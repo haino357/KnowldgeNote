@@ -569,6 +569,9 @@ Visibility(
 ),
 ```
 
+## フォントやアイコンの情報
+- [Google Fonts](https://fonts.google.com/)
+  - このサイトにフォントやアイコンの情報を調べることができる
 ## 参考URL
 - [Flutter公式ドキュメント](https://docs.flutter.dev/)
 - [Flutterの効率良い学び方](https://medium.com/flutter-jp/flutter-learning-c5640c5f05b9)
