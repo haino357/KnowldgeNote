@@ -21,3 +21,16 @@
 ## Markdownを用いたVSCodeの拡張機能
 - [Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/)
   - Markdown記法でフローチャートなどを作成する拡張機能
+
+## `detailsタグ`を利用した折りたたみ
+```
+<details>
+<summary>testテスト</summary>
+testtestテスト
+</details>
+```
+下記実際の動作
+<details>
+<summary>testテスト</summary>
+testtestテスト
+</details>
