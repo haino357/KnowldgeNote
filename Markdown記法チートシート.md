@@ -25,12 +25,14 @@
 ## `detailsタグ`を利用した折りたたみ
 ```
 <details>
-<summary>testテスト</summary>
+<summary>testテスト</summary><div>
 testtestテスト
-</details>
+</div></details>
 ```
+`<div>`を追加しないとレンダリングが崩れる
+
 下記実際の動作
 <details>
-<summary>testテスト</summary>
+<summary>testテスト</summary><div>
 testtestテスト
-</details>
+</div></details>
