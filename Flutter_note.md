@@ -357,6 +357,17 @@ flutter_localizations:
 DateTime.parse('2020-09-30 12:30:50'); 
 ```
 
+## 変数宣言
+**通常の変数宣言**
+```
+String text = `test`;
+```
+**private変数の宣言**
+変数の前に`_`アンダースコアを追加することでprivate変数にと認識する
+```
+String _text = `test`;
+```
+
 ## ライブラリ
 ### ライブラリの導入方法
 - ライブラリは公式サイト：[pub.dev](https://pub.dev/)を利用して検索する
