@@ -374,6 +374,9 @@ String _text = `test`;
 - ライブラリは`pubspec.yaml`に追記することで追加することができる
 - ライブラリの最新バージョンをインストールする場合はバージョンを指定しなくてもいい
 - バージョンを指定する場合は記載する
+- `pubspec.yaml`にライブラリを追加する場合に`dependencies`と`dev_dependencies`の二箇所追加する場所がある。
+  - `dependencies`はこのプロジェクトのパッケージで必要なライブラリを設定する場合に記載する
+  - `dev_dependencies`は開発段階において必要なライブラリを追加する場合に記載する
 
 ### ライブラリ情報一覧
 - 画面のロック
@@ -397,6 +400,8 @@ String _text = `test`;
 - 音楽系
   - [just_audio](https://pub.dev/packages/just_audio)
   - [soundpool](https://pub.dev/packages/soundpool)
+- 状態管理
+  - [flutter_riverpod](https://pub.dev/packages/flutter_riverpod)
 
 ## FlutterでOSを判断する
 Flutteでのアプリ開発において、iOSとAndroidを判別したい場合には下記コードを書く。
@@ -437,6 +442,8 @@ microseconds　//マイクロ秒
 
 
 ## Widget
+WidgetとはFlutterのUIを構築しているパーツのこと。<br>
+さまざまなWidgetを組み合わせることで複雑なUIを構築する。
 ### Text
 #### 長い文字列を省略する
 ```
