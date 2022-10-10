@@ -180,3 +180,18 @@ WIPとは「work in progress」の省略表現
 
 4. 未知の窓
 　英語でunknown selfと訳される「未知の窓」。文字どおり、自分と他人も知らない、誰からもまだ知られていない自己のこと。盲点の窓と秘密の窓を小さくして、開放の窓を大きくすると、未知の窓に気づけます。「まだ知らない自分」に気づくことで、自己成長のチャンスが訪れる。
+
+# 組織
+##　役職の名称
+### CTO(Chief Technology Officer)
+Chief Technology Officerの略で日本語では最高技術責任者のこと。<br>
+技術部門のトップとして会社の経営に参加し、経営視点で技術部門を指揮する立場。
+### VPoE(Vice President of Engineer)
+Vice President of Engineerの略で、日本語では技術部門のマネジメント責任者。<br>
+エンジニア組織が円滑に仕事できる環境や、開発の技術力の工場のために採用や指導、環境開演などを行うことでチームのマネジメントの役割を担う。
+
+### VPoP(Vice President of Product)
+プロダクトの全体責任者
+
+### VPoT(Vice President of Technology)
+システムの責任者で、CTOが立ち上げたプロダクトの開発や運用を行うエンジニア部門の責任者
