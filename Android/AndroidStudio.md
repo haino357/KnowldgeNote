@@ -21,6 +21,24 @@
 **解決策**
 エミュレータを再度作り直すことで対応できる。この時にストレージサイズを調整する。
 
+#### emulator: ERROR: Running multiple emulators with the same AVD is an experimental feature. Please use -read-only flag to enable this feature.
+**事象**
+エミュレータが開いている状態になっている。そのために新たにエミュレータを作ることができない。
+**原因**
+`/Users/ユーザー名/.android/avd/端末名.avd`の中にある下記3つファイルが原因
+```
+cache.img
+hardware-qemu.ini.lock 
+multiinstance.lock  
+```
+**解決策**
+`/Users/ユーザー名/.android/avd/端末名.avd`の中にある下記3つファイルを削除する
+```
+cache.img
+hardware-qemu.ini.lock 
+multiinstance.lock  
+```
+
 ### M1 Macでのタイムアウト対応
 - 現象：エミュレータの起動は問題ないが、アプリを走らせようとすると実行できずにタイムアウトしてしまう。
 - 対応策
