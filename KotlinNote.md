@@ -20,6 +20,69 @@
 - [Kotlin内部クラスを理解する](https://qiita.com/kaleidot725/items/f2c6611648b04f7f41db)
 
 # 構文
+## lateinit
+Javaでは初期値がない変数宣言は`null`などが入る
+```
+TextView message; // nullが入る
+```
+Kotlinでは初期値を書かなくてはならない
+```
+var message: TextView // errorになる
+var message: TextView? = null // nullが明示的
+```
+`lateinit`を使用すると宣言時に初期値を入れなくて良くなる
+```
+lateinit var message: TextView // OK
+```
+ただし、値を代入していない状態で値を参照すると`UninitializedPropertyAccessException`が投げられる
+なぜ上記のように`lateinit`を使用するかというと、Androidでは、onCreate以降で初期化するものが多い。よって実質Non Nullなものが、Nullableになってしまうため`lateinit`を使用する。
+例としてはインスタンス作成時には値が定まらないが、onCreateやonCreateViewで代入されるもの。
+- findViewByIdしたView
+- DateBindingのbinding
+- DaggerなどのDIによってinjectされるもの
+
+ただし、プリミティブ型やNullableには使えない。
+
+### アンチパターン
+通信後に得られる情報を`lateinit`にする場合<br>
+あらかじめリスナーをセットしている時に、通信中や通信エラー時にアクセスして`uninitializedPropertyAccessException`が起こる
+```
+lateinit var profile: Profile
+
+fun init() {
+    fetchProfile().subscribe { profile ->
+        this.profile = profile
+    }
+}
+
+button.setOnClickListener {
+    textView.text = profile.name
+}
+```
+**解決策**
+- Nullableにして、常に情報未取得時をどうするか考えさせる
+```
+var profile: Profile? = null
+
+fun init() {
+    fetchProfile().subscribe { profile ->
+        this.profile = profile
+    }
+}
+```
+- onCreate / onCreateViewで初期化可能の場合は`lateinit`で良い
+- 上記以降で値が決まる場合、Nullableにするかメンバ変数にするのを避ける
+- `isInitialized`を利用して値が代入されたか確認する
+```
+lateinit var str: String
+
+fun foo() {
+    val before = ::str.isInitialized // false
+    str = "hello"
+    val after = ::str.isInitialized // true
+}
+```
+
 ## when文
 Javaでの`switch文`や`if-else文`としても使用できる。  
 Javaの`switch文`はAndroidStudioでは`when文`に変換される。
