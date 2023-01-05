@@ -587,6 +587,14 @@ Visibility(
 ),
 ```
 
+### 比率で表示する
+```
+AspectRatio(
+  aspectRatio: 3 / 2, /* 横幅 / 高さ */
+  child: Container(),
+),
+```
+
 ## フォントやアイコンの情報
 - [Google Fonts](https://fonts.google.com/)
   - このサイトにフォントやアイコンの情報を調べることができる
