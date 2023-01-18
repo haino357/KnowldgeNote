@@ -2,11 +2,9 @@
 - マシン
   - M1 MacbookAir 2020
 - OS
-  - Mac OS Big Sur Ver.11.3.1
+  - macOS Ventura Ver.13.0.1
 - シェル
   - zsh 5.8 (x86_64-apple-darwin20.0)
-
-<img src="Picture/ScreenShot/MacBookAirImfo.png" width="600">
 
 ## 時間環境設定
 iOSのシミュレータはMacのシステム時間と同期している。そのためシステム時間を変更することでシミュレータの時間設定も変更できる
