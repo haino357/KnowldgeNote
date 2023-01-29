@@ -11,6 +11,14 @@ git config --global user.name "Your Name"
 git config --global user.email "email@～"
 ```
 
+## ログを確認するコマンド
+```
+git log           // commit情報(人や時間の情報が表示される)
+git log --oneline // commit一覧のコメントだけ表示する
+git log --graph   // commit情報をグラフ上に表示する
+```
+終了時には`q`を入力する
+
 ## コミットを元に戻す方法
 ### ローカルリポジトリの場合は下記のみでOK
 ```
