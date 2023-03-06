@@ -15,6 +15,18 @@
 ```
 参考としてサイズは"600"がちょうど良い感じ
 
+### 画像を並べる
+**横並び**
+```
+![](画像のURL)![](画像のURL)
+<img src="画像URL"><img src="画像URL">
+```
+スペースを開ける
+```
+![](画像のURL) ![](画像のURL)
+<img src="画像URL"> <img src="画像URL">
+```
+
 ## 表・テーブル
 表・テーブルの作成ツール：https://notepm.jp/markdown-table-tool
 
