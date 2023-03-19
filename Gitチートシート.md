@@ -171,6 +171,9 @@ git merge branchB
 ```
 <img src="Picture/git-merge.png" width="600">
 
+## Squash
+Git Squashは複数のコミット履歴を1つのコミット履歴でまとめる時使う。
+
 ## パスワード求められたが、パスワードでは対応できない場合
 ### Mac
 1. ターミナルでパスワードを求められる操作を行うと下記のようにパスワードを求められる。ここでコロン以下にGitHubのTokenを入力する。
