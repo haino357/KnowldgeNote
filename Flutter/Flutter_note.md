@@ -397,11 +397,17 @@ String _text = `test`;
   - [dio](https://pub.dev/packages/dio)
   - [retrofit_generator](https://pub.dev/packages/retrofit_generator)
   - [freezed](https://pub.dev/packages/freezed)
+  - [http](https://pub.dev/packages/http)
 - 音楽系
   - [just_audio](https://pub.dev/packages/just_audio)
   - [soundpool](https://pub.dev/packages/soundpool)
 - 状態管理
   - [flutter_riverpod](https://pub.dev/packages/flutter_riverpod)
+- 環境設定ファイルの管理
+  - [flutter_config](https://pub.dev/packages/flutter_config)
+  - [dotenv](https://pub.dev/packages/dotenv/example)
+  - [flutter_dotenv](https://pub.dev/packages/flutter_dotenv)
+    - Publisherが無名なので使う時は注意が必要
 
 ## FlutterでOSを判断する
 Flutteでのアプリ開発において、iOSとAndroidを判別したい場合には下記コードを書く。
@@ -594,6 +600,14 @@ AspectRatio(
   child: Container(),
 ),
 ```
+
+## 状態管理
+まず、状態とはUIを構築する上で必要なデータのこと。データを元にUIを作る仕組みのことを状態を持つと呼ぶ。<br>
+アプリのUIを様々なデータを元に作っている。この様々なデータのことをアプリの状態と呼び、その状態を扱いやすく管理する仕組みを状態管理と言う。<br>
+
+### [Riverpod](https://pub.dev/packages/flutter_riverpod)
+複雑になる状態を管理する仕組みの一つ
+
 
 ## フォントやアイコンの情報
 - [Google Fonts](https://fonts.google.com/)
