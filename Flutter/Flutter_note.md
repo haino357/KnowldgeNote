@@ -368,47 +368,6 @@ String text = `test`;
 String _text = `test`;
 ```
 
-## ライブラリ
-### ライブラリの導入方法
-- ライブラリは公式サイト：[pub.dev](https://pub.dev/)を利用して検索する
-- ライブラリは`pubspec.yaml`に追記することで追加することができる
-- ライブラリの最新バージョンをインストールする場合はバージョンを指定しなくてもいい
-- バージョンを指定する場合は記載する
-- `pubspec.yaml`にライブラリを追加する場合に`dependencies`と`dev_dependencies`の二箇所追加する場所がある。
-  - `dependencies`はこのプロジェクトのパッケージで必要なライブラリを設定する場合に記載する
-  - `dev_dependencies`は開発段階において必要なライブラリを追加する場合に記載する
-
-### ライブラリ情報一覧
-- 画面のロック
-  - [secure_application](https://pub.dev/packages/secure_application)
-- スクリーンショット・画面録画禁止
-  - [screen_protector](https://pub.dev/packages/screen_protector)
-- スプラッシュ画面
-  - [flutter_native_splash](https://pub.dev/packages/flutter_native_splash)
-- Webview
-  - [webview_flutter](https://pub.dev/packages/webview_flutter)
-  - [flutter_inappwebview](https://pub.dev/packages/flutter_inappwebview)
-- Jsonパース
-  - [json_annotation](https://pub.dev/packages/json_annotation)
-  - [build_runner](https://pub.dev/packages/build_runner)
-  - [json_serializable](https://pub.dev/packages/json_serializable)
-- API通信
-  - [retrofit](https://pub.dev/packages/retrofit)
-  - [dio](https://pub.dev/packages/dio)
-  - [retrofit_generator](https://pub.dev/packages/retrofit_generator)
-  - [freezed](https://pub.dev/packages/freezed)
-  - [http](https://pub.dev/packages/http)
-- 音楽系
-  - [just_audio](https://pub.dev/packages/just_audio)
-  - [soundpool](https://pub.dev/packages/soundpool)
-- 状態管理
-  - [flutter_riverpod](https://pub.dev/packages/flutter_riverpod)
-- 環境設定ファイルの管理
-  - [flutter_config](https://pub.dev/packages/flutter_config)
-  - [dotenv](https://pub.dev/packages/dotenv/example)
-  - [flutter_dotenv](https://pub.dev/packages/flutter_dotenv)
-    - Publisherが無名なので使う時は注意が必要
-
 ## FlutterでOSを判断する
 Flutteでのアプリ開発において、iOSとAndroidを判別したい場合には下記コードを書く。
 ```
