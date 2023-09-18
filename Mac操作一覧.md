@@ -81,7 +81,8 @@ ifconfig
 **現在のディレクトリを表示する**
 ```
 pwd
-``` 
+```
+pwdコマンドは「Print Working Directory」または「Present Working Directory」の略と言われる。 
 **ホームディレクトリへ移動するコマンド**
 ```
 cd ~
