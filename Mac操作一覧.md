@@ -78,6 +78,10 @@ machdep.cpu.brand_string: Apple M1
 ```
 ifconfig
 ```
+**現在のディレクトリを表示する**
+```
+pwd
+``` 
 **ホームディレクトリへ移動するコマンド**
 ```
 cd ~
