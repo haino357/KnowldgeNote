@@ -3,6 +3,27 @@
 - コマンド操作：ctrl + Shift + p
 - 
 
+## 設定
+1. 設定画面の開き方
+ショートカットキーcommand + ,(Windows: Ctrl + ,)<br>
+メニューバーの`Code > 基本設定 > 設定`を押下
+
+2. `setting.josn`の開き方
+開いた設定画面の右上の下記画像のアイコンをクリックする
+<img src="/Picture/ScreenShot/VSCodeのsetting.jsonの開き方.png" width="400">
+
+3. `setting.json`の変更方法
+- ウインドウバーやアクティビティバーの色を変える
+```
+// 現在のウインドウの色を変える
+    "workbench.colorCustomizations": {
+        // タイトルバーの色を変える
+        "titleBar.activeBackground": "#ff0000",
+        // アクティビティバーの色を変える
+        "activityBar.activeBackground": "#ff0000"
+    }
+```
+
 ## VSCode拡張機能
 - [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
 - [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode)
