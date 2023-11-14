@@ -221,6 +221,19 @@ cat test.html  #test.htmlの中身を表示する
 cat -n test.html  #test.htmlの中身を行番号付きで表示する
 ```
 
+## findコマンド
+ファイルやディレクトリを検索するコマンド
+```
+find . -name test.html  #カレントディレクトリ以下のファイル名がtest.htmlのファイルを検索する
+find . -name "*.html"  #カレントディレクトリ以下のファイル名が.htmlで終わるファイルを検索する
+find . -name "*.html" -print  #カレントディレクトリ以下のファイル名が.htmlで終わるファイルを検索して表示する
+find . -name "*.html" -print -exec rm {} \;  #カレントディレクトリ以下のファイル名が.htmlで終わるファイルを検索して削除する
+find ディレクトリ 検索条件 -print  #検索ファイルを表示する
+find ディレクトリ 検索条件 -ls  #検索ファイルを詳しく表示する）
+find ディレクトリ -type d  #ディレクトリを探し出す
+find ディレクトリ -type f  #ファイルを探し出す
+```
+
 ## SSHコマンド
 SSH(Secure Shell)は、暗号や認証の技術を利用して、安全にリモートコンピュータと通信するためのプロトコル
 ```
