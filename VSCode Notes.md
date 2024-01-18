@@ -1,7 +1,9 @@
 # VSCode Notes
 ## 基本操作
 - コマンド操作：ctrl + Shift + p
-- 
+- ターミナル起動
+  - ctrl + Shift + @(JISキーボードの場合)
+  - ctrl + `(USキーボードの場合)
 
 ## 設定
 1. 設定画面の開き方
