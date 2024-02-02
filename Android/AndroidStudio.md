@@ -83,3 +83,7 @@ APKを選択し、Nextを押下すると下記画面に遷移する。
 **コード記載と実行のイメージ**
 
 <img src="/Picture/ScreenShot/Scratchファイルを実行.png" width="600">
+
+## ローカルリポジトリの作成
+AndroidStudioの上部メニューの`VCS` > `Enable Version Control Integration...` を選択する。
+画面がひょうじされるので、`Git`を選択し、OKボタンを押下する。
