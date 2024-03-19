@@ -1,3 +1,6 @@
+## Apple Developer Program
+- [Apple Developer Program](https://developer.apple.com/programs/)
+
 ## 更新項目
 ### Apple Developer Program Membership
 Appleの開発者プログラムに参加するための有料メンバーシップ。有効期限は1年間で有効期限が切れると、開発者プログラムへのアクセスや証明書の更新ができなくなる。また、アプリはダウンロードできなくなり、すでにインストールまたはダウンロードしたユーザーも、そのアプリを使用できなくなる。
@@ -53,3 +56,16 @@ Appleの開発者プログラムに参加するための有料メンバーシッ
 
 ### 参考サイト
 - [Apple Developerが忘れがちな4つの更新項目](https://qiita.com/sauna1137/items/320c35e9b4e50d19d915)
+
+
+## Warningと対応
+1. SDK version issue
+日付：2024/3/14(木)
+```
+SDK version issue. This app was built with the iOS 16.4 SDK. Starting April 29, 2024, all iOS and iPadOS apps must be built with the iOS 17 SDK or later, included in Xcode 15 or later, in order to be uploaded to App Store Connect or submitted for distribution.
+
+SDKのバージョンの問題。 このアプリは iOS 16.4 SDK を使用して構築されました。 2024 年 4 月 29 日以降、すべての iOS アプリと iPadOS アプリは、App Store Connect にアップロードしたり配布用に送信したりするには、Xcode 15 以降に含まれる iOS 17 SDK 以降を使用して構築する必要があります。
+```
+**対処法**
+- 2024/3/14(木)までに、iOS 17 SDK 以降を使用してアプリをビルドする必要がある
+- 対応方法：Xcode 15 以降を使用してアプリをビルドする
