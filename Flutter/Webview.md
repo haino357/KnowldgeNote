@@ -1,7 +1,7 @@
 # Webview
 
 ## 1. FlutterでWebviewを利用する
-- [webview_flutter 4.5.0](https://pub.dev/packages/webview_flutter)を利用する場合
+- [webview_flutter](https://pub.dev/packages/webview_flutter)を利用する場合
 - [flutter_inappwebview](https://pub.dev/packages/flutter_inappwebview)を利用する場合
 
 `webview_flutter`または`flutter_inappwebview`パッケージを利用することで、Flutterアプリ内でWebviewを利用することができる。
