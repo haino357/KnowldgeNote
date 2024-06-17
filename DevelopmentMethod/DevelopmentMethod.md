@@ -25,7 +25,6 @@
 ### MVVM
 ### MVC
 ### MVP
-### Clean Architecture
 
 ## SOLID原則
 SOLIDとは、下記の5つのソフトウェア設計原則を並べたバクロニムである。
