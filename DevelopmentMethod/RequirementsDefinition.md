@@ -54,3 +54,9 @@
 - 保守性要件: システムの保守性に関する要件
 - 移行性要件: システムの移行性に関する要件
 - セキュリティ要件: システムのセキュリティに関する要件
+
+
+## 参考サイト
+- [[Doc] 要件定義書テンプレート・要件定義書の書き方](https://qiita.com/syantien/items/9a8a7cbaeca2be3ef0d7)
+- [【入門】要件定義](https://zenn.dev/sutamac/articles/351cb3c7ea66ba)
+- 
