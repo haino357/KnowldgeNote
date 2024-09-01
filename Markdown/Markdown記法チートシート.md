@@ -27,6 +27,11 @@
 <img src="画像URL"> <img src="画像URL">
 ```
 
+### 画像を中央に配置
+```
+<div align="center"><img src="画像URL" width="サイズ"></div>
+```
+
 ## 表・テーブル
 表・テーブルの作成ツール：https://notepm.jp/markdown-table-tool
 
