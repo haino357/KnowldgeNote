@@ -1,5 +1,5 @@
 # CI/CDとは
-Continuous Integration／Continuous Delivery
+Continuous Integration／Continuous Delivery & Deployment
 継続的インティグレーション／継続的デリバリー
 
 CI/CDは1つの技術を指すものでなく、ソフトウェアの変更を常にテストして自動で本番環境にリリース可能な状態にしておく、ソフトウェア開発の手法を意味します。CI/CDを取り入れると、バグを素早く発見したり、変更を自動でリリースしたりできるようになります。
