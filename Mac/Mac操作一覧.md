@@ -68,6 +68,12 @@ iOSのシミュレータはMacのシステム時間と同期している。そ�
 ## 画像をFinderから確認する方法(クイックルック)
 - 見たい画像を選択して、`space`キーを押す
 
+## ウインドウを最小化する
+- `command + M`
+- `command + option + M`：全てのウインドウを最小化する
+- `command + H`：アクティブなウインドウを非表示にする
+- `Command + Tabでアプリを選択した後、Optionキーを押してCommandキーを離す`：最小化したウインドウを表示する
+
 # brew(Homebrew)
 brew(Homebrew)とは、macOS用パッケージマネージャー
 
